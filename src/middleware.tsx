@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { SiteConfig, sites } from "./config/sites";
+import { SiteConfig, sites } from "./libs/configs/sites";
 
 // exclude all files in the public folder
 // exclude all API routes
