@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "src/styles/Home.module.css";
 
+import Button from "@libs/dng-ui/elements/user-actions/Button";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -16,6 +18,7 @@ export default function Home() {
       </Head>
       <div>
         <h1>DeLorean Next Generation</h1>
+        <Button>CLICK ME</Button>
       </div>
     </>
   );
