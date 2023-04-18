@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
 function ProgramsSite() {
-  return <div>Programs Site</div>;
+  return <div>Programs Site</div>
 }
 
-export default ProgramsSite;
+export default ProgramsSite

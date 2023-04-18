@@ -1,5 +1,5 @@
-import { NextRequest, NextResponse } from "next/server";
-import { SiteConfig, sites } from "./libs/configs/sites";
+import { NextRequest, NextResponse } from 'next/server'
+import { SiteConfig, sites } from './libs/dng-configs/sites'
 
 // exclude all files in the public folder
 // exclude all API routes
@@ -9,33 +9,33 @@ import { SiteConfig, sites } from "./libs/configs/sites";
 // const isPublicPath = (path: string) => !privatePaths.includes(path);
 
 export function middleware(req: NextRequest, res: NextResponse) {
-  console.log("middleware running....");
+  console.log('middleware running....')
 
-  const { pathname } = req.nextUrl;
-  const hostname = req.headers.get("host");
-  const subdomain = (hostname as string).split(".")[0];
+  const { pathname } = req.nextUrl
+  const hostname = req.headers.get('host')
+  const subdomain = (hostname as string).split('.')[0]
 
-  console.log("subdomain", subdomain);
+  console.log('subdomain', subdomain)
 
   if (!sites[subdomain]) {
-    return NextResponse.next();
+    return NextResponse.next()
   }
   if (pathname.startsWith(`/_sites`)) {
     // Prevent security issues – users should not be able to canonically access
     // the pages/sites folder and its respective contents. This can also be done
     // via rewrites to a custom 404 page
-    return new Response(null, { status: 404 });
+    return new Response(null, { status: 404 })
   }
   if (
-    !pathname.includes(".") && //
-    !pathname.startsWith("/api")
+    !pathname.includes('.') && //
+    !pathname.startsWith('/api')
   ) {
     // rewrite to the current hostname under the pages/sites folder
     // the main logic component will happen in pages/sites/[site]/index.tsx
-    const url = req.nextUrl.clone();
-    url.pathname = `/_sites/${subdomain}${pathname}`;
+    const url = req.nextUrl.clone()
+    url.pathname = `/_sites/${subdomain}${pathname}`
 
-    return NextResponse.rewrite(url);
+    return NextResponse.rewrite(url)
   }
   // const { pathname } = req.nextUrl;
   // const hostname = req.headers.get("host");

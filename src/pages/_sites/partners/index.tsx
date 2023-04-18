@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
 function PartnersSite() {
-  return <div>Partners Site</div>;
+  return <div>Partners Site</div>
 }
 
-export default PartnersSite;
+export default PartnersSite

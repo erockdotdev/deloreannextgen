@@ -2,9 +2,9 @@
 
 export type SiteConfig = {
   [k: string]: {
-    public: true;
-  };
-};
+    public: true
+  }
+}
 export const sites: SiteConfig = {
   motors: {
     public: true,
@@ -21,4 +21,4 @@ export const sites: SiteConfig = {
   programs: {
     public: true,
   },
-};
+}

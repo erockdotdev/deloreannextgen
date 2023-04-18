@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
 function AboutDNGPage() {
-  return <div>AboutDNG</div>;
+  return <div>AboutDNG</div>
 }
 
-export default AboutDNGPage;
+export default AboutDNGPage
