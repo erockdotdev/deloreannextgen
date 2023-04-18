@@ -11,6 +11,6 @@ export async function getServerSideProps(context: any) {
   return {
     props: {
       stuff: "things",
-    }, // will be passed to the page component as props
+    },
   };
 }
