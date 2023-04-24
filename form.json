@@ -1,0 +1,3190 @@
+{
+  "results": [
+    {
+      "id": "12f33507-21c2-481a-b7b1-874bea91d953",
+      "name": "Partner Form",
+      "createdAt": "2023-04-13T02:32:49.548Z",
+      "updatedAt": "2023-04-16T03:12:16.039Z",
+      "archived": false,
+      "fieldGroups": [
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "richText": "<h1>Delorean Next Generation</h1>\n<p>Partner Contact Form</p>"
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "email",
+              "label": "Email",
+              "required": true,
+              "hidden": false,
+              "fieldType": "email",
+              "validation": {
+                "blockedEmailDomains": [],
+                "useDefaultBlockList": false
+              }
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "firstname",
+              "label": "First name",
+              "required": true,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            },
+            {
+              "objectTypeId": "0-1",
+              "name": "lastname",
+              "label": "Last name",
+              "required": false,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "phone",
+              "label": "Phone number",
+              "required": false,
+              "hidden": false,
+              "fieldType": "phone",
+              "useCountryCodeSelect": false,
+              "validation": {
+                "minAllowedDigits": 7,
+                "maxAllowedDigits": 20
+              }
+            },
+            {
+              "objectTypeId": "0-1",
+              "name": "state",
+              "label": "State/Region",
+              "required": false,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-2",
+              "name": "domain",
+              "label": "Company domain name",
+              "required": true,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-2",
+              "name": "name",
+              "label": "Company name",
+              "required": true,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            },
+            {
+              "objectTypeId": "0-2",
+              "name": "industry",
+              "label": "Industry",
+              "required": true,
+              "hidden": false,
+              "options": [
+                {
+                  "label": "Accounting",
+                  "value": "ACCOUNTING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Airlines/Aviation",
+                  "value": "AIRLINES_AVIATION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Alternative Dispute Resolution",
+                  "value": "ALTERNATIVE_DISPUTE_RESOLUTION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Alternative Medicine",
+                  "value": "ALTERNATIVE_MEDICINE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Animation",
+                  "value": "ANIMATION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Apparel & Fashion",
+                  "value": "APPAREL_FASHION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Architecture & Planning",
+                  "value": "ARCHITECTURE_PLANNING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Arts and Crafts",
+                  "value": "ARTS_AND_CRAFTS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Automotive",
+                  "value": "AUTOMOTIVE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Aviation & Aerospace",
+                  "value": "AVIATION_AEROSPACE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Banking",
+                  "value": "BANKING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Biotechnology",
+                  "value": "BIOTECHNOLOGY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Broadcast Media",
+                  "value": "BROADCAST_MEDIA",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Building Materials",
+                  "value": "BUILDING_MATERIALS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Business Supplies and Equipment",
+                  "value": "BUSINESS_SUPPLIES_AND_EQUIPMENT",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Capital Markets",
+                  "value": "CAPITAL_MARKETS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Chemicals",
+                  "value": "CHEMICALS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Civic & Social Organization",
+                  "value": "CIVIC_SOCIAL_ORGANIZATION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Civil Engineering",
+                  "value": "CIVIL_ENGINEERING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Commercial Real Estate",
+                  "value": "COMMERCIAL_REAL_ESTATE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Computer & Network Security",
+                  "value": "COMPUTER_NETWORK_SECURITY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Computer Games",
+                  "value": "COMPUTER_GAMES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Computer Hardware",
+                  "value": "COMPUTER_HARDWARE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Computer Networking",
+                  "value": "COMPUTER_NETWORKING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Computer Software",
+                  "value": "COMPUTER_SOFTWARE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Internet",
+                  "value": "INTERNET",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Construction",
+                  "value": "CONSTRUCTION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Consumer Electronics",
+                  "value": "CONSUMER_ELECTRONICS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Consumer Goods",
+                  "value": "CONSUMER_GOODS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Consumer Services",
+                  "value": "CONSUMER_SERVICES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Cosmetics",
+                  "value": "COSMETICS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Dairy",
+                  "value": "DAIRY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Defense & Space",
+                  "value": "DEFENSE_SPACE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Design",
+                  "value": "DESIGN",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Education Management",
+                  "value": "EDUCATION_MANAGEMENT",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "E-Learning",
+                  "value": "E_LEARNING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Electrical/Electronic Manufacturing",
+                  "value": "ELECTRICAL_ELECTRONIC_MANUFACTURING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Entertainment",
+                  "value": "ENTERTAINMENT",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Environmental Services",
+                  "value": "ENVIRONMENTAL_SERVICES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Events Services",
+                  "value": "EVENTS_SERVICES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Executive Office",
+                  "value": "EXECUTIVE_OFFICE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Facilities Services",
+                  "value": "FACILITIES_SERVICES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Farming",
+                  "value": "FARMING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Financial Services",
+                  "value": "FINANCIAL_SERVICES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Fine Art",
+                  "value": "FINE_ART",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Fishery",
+                  "value": "FISHERY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Food & Beverages",
+                  "value": "FOOD_BEVERAGES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Food Production",
+                  "value": "FOOD_PRODUCTION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Fund-Raising",
+                  "value": "FUND_RAISING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Furniture",
+                  "value": "FURNITURE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Gambling & Casinos",
+                  "value": "GAMBLING_CASINOS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Glass, Ceramics & Concrete",
+                  "value": "GLASS_CERAMICS_CONCRETE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Government Administration",
+                  "value": "GOVERNMENT_ADMINISTRATION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Government Relations",
+                  "value": "GOVERNMENT_RELATIONS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Graphic Design",
+                  "value": "GRAPHIC_DESIGN",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Health, Wellness and Fitness",
+                  "value": "HEALTH_WELLNESS_AND_FITNESS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Higher Education",
+                  "value": "HIGHER_EDUCATION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Hospital & Health Care",
+                  "value": "HOSPITAL_HEALTH_CARE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Hospitality",
+                  "value": "HOSPITALITY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Human Resources",
+                  "value": "HUMAN_RESOURCES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Import and Export",
+                  "value": "IMPORT_AND_EXPORT",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Individual & Family Services",
+                  "value": "INDIVIDUAL_FAMILY_SERVICES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Industrial Automation",
+                  "value": "INDUSTRIAL_AUTOMATION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Information Services",
+                  "value": "INFORMATION_SERVICES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Information Technology and Services",
+                  "value": "INFORMATION_TECHNOLOGY_AND_SERVICES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Insurance",
+                  "value": "INSURANCE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "International Affairs",
+                  "value": "INTERNATIONAL_AFFAIRS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "International Trade and Development",
+                  "value": "INTERNATIONAL_TRADE_AND_DEVELOPMENT",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Investment Banking",
+                  "value": "INVESTMENT_BANKING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Investment Management",
+                  "value": "INVESTMENT_MANAGEMENT",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Judiciary",
+                  "value": "JUDICIARY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Law Enforcement",
+                  "value": "LAW_ENFORCEMENT",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Law Practice",
+                  "value": "LAW_PRACTICE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Legal Services",
+                  "value": "LEGAL_SERVICES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Legislative Office",
+                  "value": "LEGISLATIVE_OFFICE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Leisure, Travel & Tourism",
+                  "value": "LEISURE_TRAVEL_TOURISM",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Libraries",
+                  "value": "LIBRARIES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Logistics and Supply Chain",
+                  "value": "LOGISTICS_AND_SUPPLY_CHAIN",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Luxury Goods & Jewelry",
+                  "value": "LUXURY_GOODS_JEWELRY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Machinery",
+                  "value": "MACHINERY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Management Consulting",
+                  "value": "MANAGEMENT_CONSULTING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Maritime",
+                  "value": "MARITIME",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Market Research",
+                  "value": "MARKET_RESEARCH",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Marketing and Advertising",
+                  "value": "MARKETING_AND_ADVERTISING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Mechanical or Industrial Engineering",
+                  "value": "MECHANICAL_OR_INDUSTRIAL_ENGINEERING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Media Production",
+                  "value": "MEDIA_PRODUCTION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Medical Devices",
+                  "value": "MEDICAL_DEVICES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Medical Practice",
+                  "value": "MEDICAL_PRACTICE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Mental Health Care",
+                  "value": "MENTAL_HEALTH_CARE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Military",
+                  "value": "MILITARY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Mining & Metals",
+                  "value": "MINING_METALS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Motion Pictures and Film",
+                  "value": "MOTION_PICTURES_AND_FILM",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Museums and Institutions",
+                  "value": "MUSEUMS_AND_INSTITUTIONS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Music",
+                  "value": "MUSIC",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Nanotechnology",
+                  "value": "NANOTECHNOLOGY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Newspapers",
+                  "value": "NEWSPAPERS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Non-Profit Organization Management",
+                  "value": "NON_PROFIT_ORGANIZATION_MANAGEMENT",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Oil & Energy",
+                  "value": "OIL_ENERGY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Online Media",
+                  "value": "ONLINE_MEDIA",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Outsourcing/Offshoring",
+                  "value": "OUTSOURCING_OFFSHORING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Package/Freight Delivery",
+                  "value": "PACKAGE_FREIGHT_DELIVERY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Packaging and Containers",
+                  "value": "PACKAGING_AND_CONTAINERS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Paper & Forest Products",
+                  "value": "PAPER_FOREST_PRODUCTS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Performing Arts",
+                  "value": "PERFORMING_ARTS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Pharmaceuticals",
+                  "value": "PHARMACEUTICALS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Philanthropy",
+                  "value": "PHILANTHROPY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Photography",
+                  "value": "PHOTOGRAPHY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Plastics",
+                  "value": "PLASTICS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Political Organization",
+                  "value": "POLITICAL_ORGANIZATION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Primary/Secondary Education",
+                  "value": "PRIMARY_SECONDARY_EDUCATION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Printing",
+                  "value": "PRINTING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Professional Training & Coaching",
+                  "value": "PROFESSIONAL_TRAINING_COACHING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Program Development",
+                  "value": "PROGRAM_DEVELOPMENT",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Public Policy",
+                  "value": "PUBLIC_POLICY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Public Relations and Communications",
+                  "value": "PUBLIC_RELATIONS_AND_COMMUNICATIONS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Public Safety",
+                  "value": "PUBLIC_SAFETY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Publishing",
+                  "value": "PUBLISHING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Railroad Manufacture",
+                  "value": "RAILROAD_MANUFACTURE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Ranching",
+                  "value": "RANCHING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Real Estate",
+                  "value": "REAL_ESTATE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Recreational Facilities and Services",
+                  "value": "RECREATIONAL_FACILITIES_AND_SERVICES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Religious Institutions",
+                  "value": "RELIGIOUS_INSTITUTIONS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Renewables & Environment",
+                  "value": "RENEWABLES_ENVIRONMENT",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Research",
+                  "value": "RESEARCH",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Restaurants",
+                  "value": "RESTAURANTS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Retail",
+                  "value": "RETAIL",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Security and Investigations",
+                  "value": "SECURITY_AND_INVESTIGATIONS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Semiconductors",
+                  "value": "SEMICONDUCTORS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Shipbuilding",
+                  "value": "SHIPBUILDING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Sporting Goods",
+                  "value": "SPORTING_GOODS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Sports",
+                  "value": "SPORTS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Staffing and Recruiting",
+                  "value": "STAFFING_AND_RECRUITING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Supermarkets",
+                  "value": "SUPERMARKETS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Telecommunications",
+                  "value": "TELECOMMUNICATIONS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Textiles",
+                  "value": "TEXTILES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Think Tanks",
+                  "value": "THINK_TANKS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Tobacco",
+                  "value": "TOBACCO",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Translation and Localization",
+                  "value": "TRANSLATION_AND_LOCALIZATION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Transportation/Trucking/Railroad",
+                  "value": "TRANSPORTATION_TRUCKING_RAILROAD",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Utilities",
+                  "value": "UTILITIES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Venture Capital & Private Equity",
+                  "value": "VENTURE_CAPITAL_PRIVATE_EQUITY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Veterinary",
+                  "value": "VETERINARY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Warehousing",
+                  "value": "WAREHOUSING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Wholesale",
+                  "value": "WHOLESALE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Wine and Spirits",
+                  "value": "WINE_AND_SPIRITS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Wireless",
+                  "value": "WIRELESS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Writing and Editing",
+                  "value": "WRITING_AND_EDITING",
+                  "description": "",
+                  "displayOrder": -1
+                }
+              ],
+              "fieldType": "dropdown"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-2",
+              "name": "initiatives",
+              "label": "We're interesting in partnering on",
+              "required": true,
+              "hidden": false,
+              "options": [
+                {
+                  "label": "DNG Motors",
+                  "value": "DNG Motors",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "DeLorean Style",
+                  "value": "DeLorean Style",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "DNG Education Program",
+                  "value": "DNG Education Program",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "DeLorean Legacy Project",
+                  "value": "DeLorean Legacy Project",
+                  "description": "",
+                  "displayOrder": -1
+                }
+              ],
+              "fieldType": "multiple_checkboxes"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "message",
+              "label": "Message",
+              "required": false,
+              "hidden": false,
+              "fieldType": "multi_line_text"
+            }
+          ]
+        }
+      ],
+      "configuration": {
+        "language": "en",
+        "cloneable": true,
+        "postSubmitAction": {
+          "type": "thank_you",
+          "value": "<p>Thank you for reaching out! We'll get back to you soon.</p>"
+        },
+        "editable": true,
+        "archivable": true,
+        "recaptchaEnabled": false,
+        "notifyContactOwner": true,
+        "notifyRecipients": [
+          "50354643",
+          "50355403"
+        ],
+        "createNewContactForNewEmail": false,
+        "prePopulateKnownValues": true,
+        "allowLinkToResetKnownValues": true
+      },
+      "displayOptions": {
+        "renderRawHtml": false,
+        "theme": "default_style",
+        "submitButtonText": "Submit",
+        "style": {
+          "fontFamily": "helvetica",
+          "backgroundWidth": "100%",
+          "labelTextColor": "#33475b",
+          "labelTextSize": "14px",
+          "helpTextColor": "#7C98B6",
+          "helpTextSize": "11px",
+          "legalConsentTextColor": "#33475b",
+          "legalConsentTextSize": "14px",
+          "submitColor": "#770003",
+          "submitAlignment": "left",
+          "submitFontColor": "#ffffff",
+          "submitSize": "12px"
+        },
+        "cssClass": "hs-form stacked"
+      },
+      "legalConsentOptions": {
+        "type": "none"
+      },
+      "formType": "hubspot"
+    },
+    {
+      "id": "2cb32bec-0108-4e3c-9bb3-d9575bcf0282",
+      "name": "Influencer Relations",
+      "createdAt": "2023-04-16T02:31:32.658Z",
+      "updatedAt": "2023-04-16T02:37:21.489Z",
+      "archived": false,
+      "fieldGroups": [
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "richText": "<h1>DeLorean Next Generation</h1>\n<p>Influencer Relations Contact Form</p>"
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "email",
+              "label": "Email",
+              "required": true,
+              "hidden": false,
+              "fieldType": "email",
+              "validation": {
+                "blockedEmailDomains": [],
+                "useDefaultBlockList": false
+              }
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "firstname",
+              "label": "First name",
+              "required": true,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            },
+            {
+              "objectTypeId": "0-1",
+              "name": "lastname",
+              "label": "Last name",
+              "required": false,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "phone",
+              "label": "Phone number",
+              "required": false,
+              "hidden": false,
+              "fieldType": "phone",
+              "useCountryCodeSelect": false,
+              "validation": {
+                "minAllowedDigits": 7,
+                "maxAllowedDigits": 20
+              }
+            },
+            {
+              "objectTypeId": "0-1",
+              "name": "state",
+              "label": "State/Region",
+              "required": false,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "website",
+              "label": "Primary Social Media Channel",
+              "description": "Please enter the full url of your primary social media channel",
+              "required": true,
+              "hidden": false,
+              "placeholder": "https://www.instagram.com/yourhandle",
+              "fieldType": "single_line_text"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "interested_in",
+              "label": "Initiatives ",
+              "required": false,
+              "hidden": true,
+              "defaultValues": [
+                "Influencer Relations"
+              ],
+              "options": [
+                {
+                  "label": "Influencer Relations",
+                  "value": "Influencer Relations",
+                  "description": "",
+                  "displayOrder": -1
+                }
+              ],
+              "fieldType": "multiple_checkboxes"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "message",
+              "label": "Message",
+              "required": false,
+              "hidden": false,
+              "fieldType": "multi_line_text"
+            }
+          ]
+        }
+      ],
+      "configuration": {
+        "language": "en",
+        "cloneable": true,
+        "postSubmitAction": {
+          "type": "thank_you",
+          "value": "<p>Thank you for reaching out! We'll get back to you soon.</p>"
+        },
+        "editable": true,
+        "archivable": true,
+        "recaptchaEnabled": false,
+        "notifyContactOwner": true,
+        "notifyRecipients": [
+          "50354643",
+          "50355403"
+        ],
+        "createNewContactForNewEmail": false,
+        "prePopulateKnownValues": true,
+        "allowLinkToResetKnownValues": true
+      },
+      "displayOptions": {
+        "renderRawHtml": false,
+        "theme": "default_style",
+        "submitButtonText": "Submit",
+        "style": {
+          "fontFamily": "helvetica",
+          "backgroundWidth": "100%",
+          "labelTextColor": "#33475b",
+          "labelTextSize": "14px",
+          "helpTextColor": "#7C98B6",
+          "helpTextSize": "11px",
+          "legalConsentTextColor": "#33475b",
+          "legalConsentTextSize": "14px",
+          "submitColor": "#770003",
+          "submitAlignment": "left",
+          "submitFontColor": "#ffffff",
+          "submitSize": "12px"
+        },
+        "cssClass": "hs-form stacked"
+      },
+      "legalConsentOptions": {
+        "type": "none"
+      },
+      "formType": "hubspot"
+    },
+    {
+      "id": "5ba86679-42f1-49a7-bf36-9d970d2008cc",
+      "name": "New newsletter sign-up form (April 7, 2023 5:27:59 PM EDT) ",
+      "createdAt": "2023-04-07T21:27:59.223Z",
+      "updatedAt": "2023-04-07T21:35:21.916Z",
+      "archived": false,
+      "fieldGroups": [
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "email",
+              "label": "Email",
+              "required": true,
+              "hidden": false,
+              "fieldType": "email",
+              "validation": {
+                "blockedEmailDomains": [],
+                "useDefaultBlockList": false
+              }
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "firstname",
+              "label": "First name",
+              "required": false,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "lastname",
+              "label": "Last name",
+              "required": false,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            }
+          ]
+        }
+      ],
+      "configuration": {
+        "language": "en",
+        "cloneable": true,
+        "postSubmitAction": {
+          "type": "thank_you",
+          "value": "<p>Thank you for joining our mailing list</p>"
+        },
+        "editable": true,
+        "archivable": true,
+        "recaptchaEnabled": false,
+        "notifyContactOwner": false,
+        "notifyRecipients": [
+          "50354643"
+        ],
+        "createNewContactForNewEmail": false,
+        "prePopulateKnownValues": true,
+        "allowLinkToResetKnownValues": false
+      },
+      "displayOptions": {
+        "renderRawHtml": false,
+        "theme": "default_style",
+        "submitButtonText": "SUBSCRIBE",
+        "style": {
+          "fontFamily": "arial, helvetica, sans-serif",
+          "backgroundWidth": "100%",
+          "labelTextColor": "#33475b",
+          "labelTextSize": "14px",
+          "helpTextColor": "#7C98B6",
+          "helpTextSize": "11px",
+          "legalConsentTextColor": "#33475b",
+          "legalConsentTextSize": "14px",
+          "submitColor": "#ff7a59",
+          "submitAlignment": "left",
+          "submitFontColor": "#ffffff",
+          "submitSize": "12px"
+        },
+        "cssClass": "hs-form stacked"
+      },
+      "legalConsentOptions": {
+        "type": "none"
+      },
+      "formType": "hubspot"
+    },
+    {
+      "id": "7163a57c-db99-441b-bccb-566b85c110c6",
+      "name": "[DNG] Mailing List Subscription Form ",
+      "createdAt": "2023-04-16T03:00:48.146Z",
+      "updatedAt": "2023-04-16T03:01:39.348Z",
+      "archived": false,
+      "fieldGroups": [
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "email",
+              "label": "Email",
+              "required": true,
+              "hidden": false,
+              "fieldType": "email",
+              "validation": {
+                "blockedEmailDomains": [],
+                "useDefaultBlockList": false
+              }
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "firstname",
+              "label": "First name",
+              "required": false,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "lastname",
+              "label": "Last name",
+              "required": false,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "add_to_mailing_list",
+              "label": "Add to mailing list",
+              "required": false,
+              "hidden": true,
+              "defaultValue": "true",
+              "fieldType": "single_checkbox"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "interested_in",
+              "label": "Select which mailing lists you would like to join",
+              "required": false,
+              "hidden": true,
+              "defaultValues": [
+                "DNG Motors"
+              ],
+              "options": [
+                {
+                  "label": "DNG Motors",
+                  "value": "DNG Motors",
+                  "description": "",
+                  "displayOrder": 0
+                }
+              ],
+              "fieldType": "multiple_checkboxes"
+            }
+          ]
+        }
+      ],
+      "configuration": {
+        "language": "en",
+        "cloneable": true,
+        "postSubmitAction": {
+          "type": "thank_you",
+          "value": "Thanks for submitting the form."
+        },
+        "editable": true,
+        "archivable": true,
+        "recaptchaEnabled": false,
+        "notifyContactOwner": false,
+        "notifyRecipients": [
+          "50354643"
+        ],
+        "createNewContactForNewEmail": false,
+        "prePopulateKnownValues": true,
+        "allowLinkToResetKnownValues": false
+      },
+      "displayOptions": {
+        "renderRawHtml": false,
+        "theme": "default_style",
+        "submitButtonText": "Submit",
+        "style": {
+          "fontFamily": "helvetica",
+          "backgroundWidth": "100%",
+          "labelTextColor": "#33475b",
+          "labelTextSize": "14px",
+          "helpTextColor": "#7C98B6",
+          "helpTextSize": "11px",
+          "legalConsentTextColor": "#33475b",
+          "legalConsentTextSize": "14px",
+          "submitColor": "#770003",
+          "submitAlignment": "left",
+          "submitFontColor": "#ffffff",
+          "submitSize": "12px"
+        },
+        "cssClass": "hs-form stacked"
+      },
+      "legalConsentOptions": {
+        "type": "none"
+      },
+      "formType": "hubspot"
+    },
+    {
+      "id": "8a91ac13-9ccd-4d5b-a98b-54d0632a0233",
+      "name": "Investor Relations",
+      "createdAt": "2023-04-16T02:29:47.218Z",
+      "updatedAt": "2023-04-16T02:31:15.877Z",
+      "archived": false,
+      "fieldGroups": [
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "richText": "<h1>DeLorean Next Generation</h1>\n<p>Investor Relations Contact Form</p>"
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "email",
+              "label": "Email",
+              "required": true,
+              "hidden": false,
+              "fieldType": "email",
+              "validation": {
+                "blockedEmailDomains": [],
+                "useDefaultBlockList": false
+              }
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "firstname",
+              "label": "First name",
+              "required": true,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            },
+            {
+              "objectTypeId": "0-1",
+              "name": "lastname",
+              "label": "Last name",
+              "required": false,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "phone",
+              "label": "Phone number",
+              "required": false,
+              "hidden": false,
+              "fieldType": "phone",
+              "useCountryCodeSelect": false,
+              "validation": {
+                "minAllowedDigits": 7,
+                "maxAllowedDigits": 20
+              }
+            },
+            {
+              "objectTypeId": "0-1",
+              "name": "state",
+              "label": "State/Region",
+              "required": false,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-2",
+              "name": "domain",
+              "label": "Company domain name",
+              "required": true,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-2",
+              "name": "name",
+              "label": "Company name",
+              "required": true,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            },
+            {
+              "objectTypeId": "0-2",
+              "name": "industry",
+              "label": "Industry",
+              "required": true,
+              "hidden": false,
+              "options": [
+                {
+                  "label": "Accounting",
+                  "value": "ACCOUNTING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Airlines/Aviation",
+                  "value": "AIRLINES_AVIATION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Alternative Dispute Resolution",
+                  "value": "ALTERNATIVE_DISPUTE_RESOLUTION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Alternative Medicine",
+                  "value": "ALTERNATIVE_MEDICINE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Animation",
+                  "value": "ANIMATION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Apparel & Fashion",
+                  "value": "APPAREL_FASHION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Architecture & Planning",
+                  "value": "ARCHITECTURE_PLANNING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Arts and Crafts",
+                  "value": "ARTS_AND_CRAFTS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Automotive",
+                  "value": "AUTOMOTIVE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Aviation & Aerospace",
+                  "value": "AVIATION_AEROSPACE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Banking",
+                  "value": "BANKING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Biotechnology",
+                  "value": "BIOTECHNOLOGY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Broadcast Media",
+                  "value": "BROADCAST_MEDIA",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Building Materials",
+                  "value": "BUILDING_MATERIALS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Business Supplies and Equipment",
+                  "value": "BUSINESS_SUPPLIES_AND_EQUIPMENT",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Capital Markets",
+                  "value": "CAPITAL_MARKETS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Chemicals",
+                  "value": "CHEMICALS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Civic & Social Organization",
+                  "value": "CIVIC_SOCIAL_ORGANIZATION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Civil Engineering",
+                  "value": "CIVIL_ENGINEERING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Commercial Real Estate",
+                  "value": "COMMERCIAL_REAL_ESTATE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Computer & Network Security",
+                  "value": "COMPUTER_NETWORK_SECURITY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Computer Games",
+                  "value": "COMPUTER_GAMES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Computer Hardware",
+                  "value": "COMPUTER_HARDWARE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Computer Networking",
+                  "value": "COMPUTER_NETWORKING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Computer Software",
+                  "value": "COMPUTER_SOFTWARE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Internet",
+                  "value": "INTERNET",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Construction",
+                  "value": "CONSTRUCTION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Consumer Electronics",
+                  "value": "CONSUMER_ELECTRONICS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Consumer Goods",
+                  "value": "CONSUMER_GOODS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Consumer Services",
+                  "value": "CONSUMER_SERVICES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Cosmetics",
+                  "value": "COSMETICS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Dairy",
+                  "value": "DAIRY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Defense & Space",
+                  "value": "DEFENSE_SPACE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Design",
+                  "value": "DESIGN",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Education Management",
+                  "value": "EDUCATION_MANAGEMENT",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "E-Learning",
+                  "value": "E_LEARNING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Electrical/Electronic Manufacturing",
+                  "value": "ELECTRICAL_ELECTRONIC_MANUFACTURING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Entertainment",
+                  "value": "ENTERTAINMENT",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Environmental Services",
+                  "value": "ENVIRONMENTAL_SERVICES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Events Services",
+                  "value": "EVENTS_SERVICES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Executive Office",
+                  "value": "EXECUTIVE_OFFICE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Facilities Services",
+                  "value": "FACILITIES_SERVICES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Farming",
+                  "value": "FARMING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Financial Services",
+                  "value": "FINANCIAL_SERVICES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Fine Art",
+                  "value": "FINE_ART",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Fishery",
+                  "value": "FISHERY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Food & Beverages",
+                  "value": "FOOD_BEVERAGES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Food Production",
+                  "value": "FOOD_PRODUCTION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Fund-Raising",
+                  "value": "FUND_RAISING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Furniture",
+                  "value": "FURNITURE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Gambling & Casinos",
+                  "value": "GAMBLING_CASINOS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Glass, Ceramics & Concrete",
+                  "value": "GLASS_CERAMICS_CONCRETE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Government Administration",
+                  "value": "GOVERNMENT_ADMINISTRATION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Government Relations",
+                  "value": "GOVERNMENT_RELATIONS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Graphic Design",
+                  "value": "GRAPHIC_DESIGN",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Health, Wellness and Fitness",
+                  "value": "HEALTH_WELLNESS_AND_FITNESS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Higher Education",
+                  "value": "HIGHER_EDUCATION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Hospital & Health Care",
+                  "value": "HOSPITAL_HEALTH_CARE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Hospitality",
+                  "value": "HOSPITALITY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Human Resources",
+                  "value": "HUMAN_RESOURCES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Import and Export",
+                  "value": "IMPORT_AND_EXPORT",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Individual & Family Services",
+                  "value": "INDIVIDUAL_FAMILY_SERVICES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Industrial Automation",
+                  "value": "INDUSTRIAL_AUTOMATION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Information Services",
+                  "value": "INFORMATION_SERVICES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Information Technology and Services",
+                  "value": "INFORMATION_TECHNOLOGY_AND_SERVICES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Insurance",
+                  "value": "INSURANCE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "International Affairs",
+                  "value": "INTERNATIONAL_AFFAIRS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "International Trade and Development",
+                  "value": "INTERNATIONAL_TRADE_AND_DEVELOPMENT",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Investment Banking",
+                  "value": "INVESTMENT_BANKING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Investment Management",
+                  "value": "INVESTMENT_MANAGEMENT",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Judiciary",
+                  "value": "JUDICIARY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Law Enforcement",
+                  "value": "LAW_ENFORCEMENT",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Law Practice",
+                  "value": "LAW_PRACTICE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Legal Services",
+                  "value": "LEGAL_SERVICES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Legislative Office",
+                  "value": "LEGISLATIVE_OFFICE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Leisure, Travel & Tourism",
+                  "value": "LEISURE_TRAVEL_TOURISM",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Libraries",
+                  "value": "LIBRARIES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Logistics and Supply Chain",
+                  "value": "LOGISTICS_AND_SUPPLY_CHAIN",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Luxury Goods & Jewelry",
+                  "value": "LUXURY_GOODS_JEWELRY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Machinery",
+                  "value": "MACHINERY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Management Consulting",
+                  "value": "MANAGEMENT_CONSULTING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Maritime",
+                  "value": "MARITIME",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Market Research",
+                  "value": "MARKET_RESEARCH",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Marketing and Advertising",
+                  "value": "MARKETING_AND_ADVERTISING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Mechanical or Industrial Engineering",
+                  "value": "MECHANICAL_OR_INDUSTRIAL_ENGINEERING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Media Production",
+                  "value": "MEDIA_PRODUCTION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Medical Devices",
+                  "value": "MEDICAL_DEVICES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Medical Practice",
+                  "value": "MEDICAL_PRACTICE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Mental Health Care",
+                  "value": "MENTAL_HEALTH_CARE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Military",
+                  "value": "MILITARY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Mining & Metals",
+                  "value": "MINING_METALS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Motion Pictures and Film",
+                  "value": "MOTION_PICTURES_AND_FILM",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Museums and Institutions",
+                  "value": "MUSEUMS_AND_INSTITUTIONS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Music",
+                  "value": "MUSIC",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Nanotechnology",
+                  "value": "NANOTECHNOLOGY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Newspapers",
+                  "value": "NEWSPAPERS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Non-Profit Organization Management",
+                  "value": "NON_PROFIT_ORGANIZATION_MANAGEMENT",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Oil & Energy",
+                  "value": "OIL_ENERGY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Online Media",
+                  "value": "ONLINE_MEDIA",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Outsourcing/Offshoring",
+                  "value": "OUTSOURCING_OFFSHORING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Package/Freight Delivery",
+                  "value": "PACKAGE_FREIGHT_DELIVERY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Packaging and Containers",
+                  "value": "PACKAGING_AND_CONTAINERS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Paper & Forest Products",
+                  "value": "PAPER_FOREST_PRODUCTS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Performing Arts",
+                  "value": "PERFORMING_ARTS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Pharmaceuticals",
+                  "value": "PHARMACEUTICALS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Philanthropy",
+                  "value": "PHILANTHROPY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Photography",
+                  "value": "PHOTOGRAPHY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Plastics",
+                  "value": "PLASTICS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Political Organization",
+                  "value": "POLITICAL_ORGANIZATION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Primary/Secondary Education",
+                  "value": "PRIMARY_SECONDARY_EDUCATION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Printing",
+                  "value": "PRINTING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Professional Training & Coaching",
+                  "value": "PROFESSIONAL_TRAINING_COACHING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Program Development",
+                  "value": "PROGRAM_DEVELOPMENT",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Public Policy",
+                  "value": "PUBLIC_POLICY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Public Relations and Communications",
+                  "value": "PUBLIC_RELATIONS_AND_COMMUNICATIONS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Public Safety",
+                  "value": "PUBLIC_SAFETY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Publishing",
+                  "value": "PUBLISHING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Railroad Manufacture",
+                  "value": "RAILROAD_MANUFACTURE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Ranching",
+                  "value": "RANCHING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Real Estate",
+                  "value": "REAL_ESTATE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Recreational Facilities and Services",
+                  "value": "RECREATIONAL_FACILITIES_AND_SERVICES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Religious Institutions",
+                  "value": "RELIGIOUS_INSTITUTIONS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Renewables & Environment",
+                  "value": "RENEWABLES_ENVIRONMENT",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Research",
+                  "value": "RESEARCH",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Restaurants",
+                  "value": "RESTAURANTS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Retail",
+                  "value": "RETAIL",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Security and Investigations",
+                  "value": "SECURITY_AND_INVESTIGATIONS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Semiconductors",
+                  "value": "SEMICONDUCTORS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Shipbuilding",
+                  "value": "SHIPBUILDING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Sporting Goods",
+                  "value": "SPORTING_GOODS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Sports",
+                  "value": "SPORTS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Staffing and Recruiting",
+                  "value": "STAFFING_AND_RECRUITING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Supermarkets",
+                  "value": "SUPERMARKETS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Telecommunications",
+                  "value": "TELECOMMUNICATIONS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Textiles",
+                  "value": "TEXTILES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Think Tanks",
+                  "value": "THINK_TANKS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Tobacco",
+                  "value": "TOBACCO",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Translation and Localization",
+                  "value": "TRANSLATION_AND_LOCALIZATION",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Transportation/Trucking/Railroad",
+                  "value": "TRANSPORTATION_TRUCKING_RAILROAD",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Utilities",
+                  "value": "UTILITIES",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Venture Capital & Private Equity",
+                  "value": "VENTURE_CAPITAL_PRIVATE_EQUITY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Veterinary",
+                  "value": "VETERINARY",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Warehousing",
+                  "value": "WAREHOUSING",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Wholesale",
+                  "value": "WHOLESALE",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Wine and Spirits",
+                  "value": "WINE_AND_SPIRITS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Wireless",
+                  "value": "WIRELESS",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "Writing and Editing",
+                  "value": "WRITING_AND_EDITING",
+                  "description": "",
+                  "displayOrder": -1
+                }
+              ],
+              "fieldType": "dropdown"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-2",
+              "name": "initiatives",
+              "label": "We're interesting in",
+              "required": true,
+              "hidden": false,
+              "options": [
+                {
+                  "label": "DNG Motors",
+                  "value": "DNG Motors",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "DeLorean Style",
+                  "value": "DeLorean Style",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "DNG Education Program",
+                  "value": "DNG Education Program",
+                  "description": "",
+                  "displayOrder": -1
+                },
+                {
+                  "label": "DeLorean Legacy Project",
+                  "value": "DeLorean Legacy Project",
+                  "description": "",
+                  "displayOrder": -1
+                }
+              ],
+              "fieldType": "multiple_checkboxes"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "message",
+              "label": "Message",
+              "required": false,
+              "hidden": false,
+              "fieldType": "multi_line_text"
+            }
+          ]
+        }
+      ],
+      "configuration": {
+        "language": "en",
+        "cloneable": true,
+        "postSubmitAction": {
+          "type": "thank_you",
+          "value": "<p>Thank you for reaching out! We'll get back to you soon.</p>"
+        },
+        "editable": true,
+        "archivable": true,
+        "recaptchaEnabled": false,
+        "notifyContactOwner": true,
+        "notifyRecipients": [
+          "50354643",
+          "50355403"
+        ],
+        "createNewContactForNewEmail": false,
+        "prePopulateKnownValues": true,
+        "allowLinkToResetKnownValues": true
+      },
+      "displayOptions": {
+        "renderRawHtml": false,
+        "theme": "default_style",
+        "submitButtonText": "Submit",
+        "style": {
+          "fontFamily": "helvetica",
+          "backgroundWidth": "100%",
+          "labelTextColor": "#33475b",
+          "labelTextSize": "14px",
+          "helpTextColor": "#7C98B6",
+          "helpTextSize": "11px",
+          "legalConsentTextColor": "#33475b",
+          "legalConsentTextSize": "14px",
+          "submitColor": "#770003",
+          "submitAlignment": "left",
+          "submitFontColor": "#ffffff",
+          "submitSize": "12px"
+        },
+        "cssClass": "hs-form stacked"
+      },
+      "legalConsentOptions": {
+        "type": "none"
+      },
+      "formType": "hubspot"
+    },
+    {
+      "id": "90458c00-e5f8-4323-8fd5-813e2d276790",
+      "name": "[DNG] Contact Us",
+      "createdAt": "2023-04-16T02:20:13.027Z",
+      "updatedAt": "2023-04-16T03:03:18.822Z",
+      "archived": false,
+      "fieldGroups": [
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "email",
+              "label": "Email",
+              "required": true,
+              "hidden": false,
+              "fieldType": "email",
+              "validation": {
+                "blockedEmailDomains": [],
+                "useDefaultBlockList": false
+              }
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "firstname",
+              "label": "First name",
+              "required": false,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "lastname",
+              "label": "Last name",
+              "required": false,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "add_to_mailing_list",
+              "label": "Add to mailing list",
+              "required": false,
+              "hidden": false,
+              "fieldType": "single_checkbox"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "interested_in",
+              "label": "Initiatives ",
+              "required": false,
+              "hidden": true,
+              "defaultValues": [
+                "DNG Motors"
+              ],
+              "options": [
+                {
+                  "label": "DNG Motors",
+                  "value": "DNG Motors",
+                  "description": "",
+                  "displayOrder": 0
+                }
+              ],
+              "fieldType": "multiple_checkboxes"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "message",
+              "label": "Message",
+              "required": true,
+              "hidden": false,
+              "fieldType": "multi_line_text"
+            }
+          ]
+        }
+      ],
+      "configuration": {
+        "language": "en",
+        "cloneable": true,
+        "postSubmitAction": {
+          "type": "thank_you",
+          "value": "Thanks for submitting the form."
+        },
+        "editable": true,
+        "archivable": true,
+        "recaptchaEnabled": false,
+        "notifyContactOwner": false,
+        "notifyRecipients": [
+          "50354643"
+        ],
+        "createNewContactForNewEmail": false,
+        "prePopulateKnownValues": true,
+        "allowLinkToResetKnownValues": false
+      },
+      "displayOptions": {
+        "renderRawHtml": false,
+        "theme": "default_style",
+        "submitButtonText": "Submit",
+        "style": {
+          "fontFamily": "helvetica",
+          "backgroundWidth": "100%",
+          "labelTextColor": "#33475b",
+          "labelTextSize": "14px",
+          "helpTextColor": "#7C98B6",
+          "helpTextSize": "11px",
+          "legalConsentTextColor": "#33475b",
+          "legalConsentTextSize": "14px",
+          "submitColor": "#770003",
+          "submitAlignment": "left",
+          "submitFontColor": "#ffffff",
+          "submitSize": "12px"
+        },
+        "cssClass": "hs-form stacked"
+      },
+      "legalConsentOptions": {
+        "type": "none"
+      },
+      "formType": "hubspot"
+    },
+    {
+      "id": "a87802bc-994d-4357-9b00-9022392dda1c",
+      "name": "[DLP] Mailing List Subscription Form",
+      "createdAt": "2023-04-16T03:02:05.772Z",
+      "updatedAt": "2023-04-16T03:02:39.630Z",
+      "archived": false,
+      "fieldGroups": [
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "email",
+              "label": "Email",
+              "required": true,
+              "hidden": false,
+              "fieldType": "email",
+              "validation": {
+                "blockedEmailDomains": [],
+                "useDefaultBlockList": false
+              }
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "firstname",
+              "label": "First name",
+              "required": false,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "lastname",
+              "label": "Last name",
+              "required": false,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "add_to_mailing_list",
+              "label": "Add to mailing list",
+              "required": false,
+              "hidden": true,
+              "defaultValue": "true",
+              "fieldType": "single_checkbox"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "interested_in",
+              "label": "Select which mailing lists you would like to join",
+              "required": false,
+              "hidden": true,
+              "defaultValues": [
+                "DeLorean Legacy Project"
+              ],
+              "options": [
+                {
+                  "label": "DeLorean Legacy Project",
+                  "value": "DeLorean Legacy Project",
+                  "description": "",
+                  "displayOrder": 3
+                }
+              ],
+              "fieldType": "multiple_checkboxes"
+            }
+          ]
+        }
+      ],
+      "configuration": {
+        "language": "en",
+        "cloneable": true,
+        "postSubmitAction": {
+          "type": "thank_you",
+          "value": "Thanks for submitting the form."
+        },
+        "editable": true,
+        "archivable": true,
+        "recaptchaEnabled": false,
+        "notifyContactOwner": false,
+        "notifyRecipients": [
+          "50354643"
+        ],
+        "createNewContactForNewEmail": false,
+        "prePopulateKnownValues": true,
+        "allowLinkToResetKnownValues": false
+      },
+      "displayOptions": {
+        "renderRawHtml": false,
+        "theme": "default_style",
+        "submitButtonText": "Submit",
+        "style": {
+          "fontFamily": "helvetica",
+          "backgroundWidth": "100%",
+          "labelTextColor": "#33475b",
+          "labelTextSize": "14px",
+          "helpTextColor": "#7C98B6",
+          "helpTextSize": "11px",
+          "legalConsentTextColor": "#33475b",
+          "legalConsentTextSize": "14px",
+          "submitColor": "#770003",
+          "submitAlignment": "left",
+          "submitFontColor": "#ffffff",
+          "submitSize": "12px"
+        },
+        "cssClass": "hs-form stacked"
+      },
+      "legalConsentOptions": {
+        "type": "none"
+      },
+      "formType": "hubspot"
+    },
+    {
+      "id": "ed0c4c60-2d1f-4a9b-a60c-522e960ffc03",
+      "name": "[DLP] Contact Us",
+      "createdAt": "2023-04-16T02:22:31.459Z",
+      "updatedAt": "2023-04-16T03:02:56.998Z",
+      "archived": false,
+      "fieldGroups": [
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "email",
+              "label": "Email",
+              "required": true,
+              "hidden": false,
+              "fieldType": "email",
+              "validation": {
+                "blockedEmailDomains": [],
+                "useDefaultBlockList": false
+              }
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "firstname",
+              "label": "First name",
+              "required": false,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "lastname",
+              "label": "Last name",
+              "required": false,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "add_to_mailing_list",
+              "label": "Add to mailing list",
+              "required": false,
+              "hidden": false,
+              "fieldType": "single_checkbox"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "interested_in",
+              "label": "Initiatives ",
+              "required": false,
+              "hidden": true,
+              "defaultValues": [
+                "DeLorean Legacy Project"
+              ],
+              "options": [
+                {
+                  "label": "DeLorean Legacy Project",
+                  "value": "DeLorean Legacy Project",
+                  "description": "",
+                  "displayOrder": 1
+                }
+              ],
+              "fieldType": "multiple_checkboxes"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "message",
+              "label": "Message",
+              "required": true,
+              "hidden": false,
+              "fieldType": "multi_line_text"
+            }
+          ]
+        }
+      ],
+      "configuration": {
+        "language": "en",
+        "cloneable": true,
+        "postSubmitAction": {
+          "type": "thank_you",
+          "value": "Thanks for submitting the form."
+        },
+        "editable": true,
+        "archivable": true,
+        "recaptchaEnabled": false,
+        "notifyContactOwner": false,
+        "notifyRecipients": [
+          "50354643"
+        ],
+        "createNewContactForNewEmail": false,
+        "prePopulateKnownValues": true,
+        "allowLinkToResetKnownValues": false
+      },
+      "displayOptions": {
+        "renderRawHtml": false,
+        "theme": "default_style",
+        "submitButtonText": "Submit",
+        "style": {
+          "fontFamily": "helvetica",
+          "backgroundWidth": "100%",
+          "labelTextColor": "#33475b",
+          "labelTextSize": "14px",
+          "helpTextColor": "#7C98B6",
+          "helpTextSize": "11px",
+          "legalConsentTextColor": "#33475b",
+          "legalConsentTextSize": "14px",
+          "submitColor": "#770003",
+          "submitAlignment": "left",
+          "submitFontColor": "#ffffff",
+          "submitSize": "12px"
+        },
+        "cssClass": "hs-form stacked"
+      },
+      "legalConsentOptions": {
+        "type": "none"
+      },
+      "formType": "hubspot"
+    },
+    {
+      "id": "f84b9152-761a-4ccb-87f3-75f5514ccb78",
+      "name": "Mailing List Subscription Form",
+      "createdAt": "2023-04-16T02:16:04.097Z",
+      "updatedAt": "2023-04-16T03:00:18.131Z",
+      "archived": false,
+      "fieldGroups": [
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "email",
+              "label": "Email",
+              "required": true,
+              "hidden": false,
+              "fieldType": "email",
+              "validation": {
+                "blockedEmailDomains": [],
+                "useDefaultBlockList": false
+              }
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "firstname",
+              "label": "First name",
+              "required": false,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "lastname",
+              "label": "Last name",
+              "required": false,
+              "hidden": false,
+              "fieldType": "single_line_text"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "add_to_mailing_list",
+              "label": "Add to mailing list",
+              "required": false,
+              "hidden": true,
+              "defaultValue": "true",
+              "fieldType": "single_checkbox"
+            }
+          ]
+        },
+        {
+          "groupType": "default_group",
+          "richTextType": "text",
+          "fields": [
+            {
+              "objectTypeId": "0-1",
+              "name": "interested_in",
+              "label": "Select which mailing lists you would like to join",
+              "required": true,
+              "hidden": false,
+              "options": [
+                {
+                  "label": "DNG Motors",
+                  "value": "DNG Motors",
+                  "description": "",
+                  "displayOrder": 0
+                },
+                {
+                  "label": "DeLorean Legacy Project",
+                  "value": "DeLorean Legacy Project",
+                  "description": "",
+                  "displayOrder": 3
+                }
+              ],
+              "fieldType": "multiple_checkboxes"
+            }
+          ]
+        }
+      ],
+      "configuration": {
+        "language": "en",
+        "cloneable": true,
+        "postSubmitAction": {
+          "type": "thank_you",
+          "value": "Thanks for submitting the form."
+        },
+        "editable": true,
+        "archivable": true,
+        "recaptchaEnabled": false,
+        "notifyContactOwner": false,
+        "notifyRecipients": [
+          "50354643"
+        ],
+        "createNewContactForNewEmail": false,
+        "prePopulateKnownValues": true,
+        "allowLinkToResetKnownValues": false
+      },
+      "displayOptions": {
+        "renderRawHtml": false,
+        "theme": "default_style",
+        "submitButtonText": "Submit",
+        "style": {
+          "fontFamily": "helvetica",
+          "backgroundWidth": "100%",
+          "labelTextColor": "#33475b",
+          "labelTextSize": "14px",
+          "helpTextColor": "#7C98B6",
+          "helpTextSize": "11px",
+          "legalConsentTextColor": "#33475b",
+          "legalConsentTextSize": "14px",
+          "submitColor": "#770003",
+          "submitAlignment": "left",
+          "submitFontColor": "#ffffff",
+          "submitSize": "12px"
+        },
+        "cssClass": "hs-form stacked"
+      },
+      "legalConsentOptions": {
+        "type": "none"
+      },
+      "formType": "hubspot"
+    }
+  ]
+}

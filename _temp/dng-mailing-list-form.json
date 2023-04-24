@@ -1,0 +1,120 @@
+{
+  "forms": {
+    "id": "7163a57c-db99-441b-bccb-566b85c110c6",
+    "name": "[DNG] Mailing List Subscription Form ",
+    "createdAt": "2023-04-16T03:00:48.146Z",
+    "updatedAt": "2023-04-16T03:01:39.348Z",
+    "archived": false,
+    "fieldGroups": [
+      {
+        "groupType": "default_group",
+        "richTextType": "text",
+        "fields": [
+          {
+            "objectTypeId": "0-1",
+            "name": "email",
+            "label": "Email",
+            "required": true,
+            "hidden": false,
+            "fieldType": "email",
+            "validation": { "blockedEmailDomains": [], "useDefaultBlockList": false }
+          }
+        ]
+      },
+      {
+        "groupType": "default_group",
+        "richTextType": "text",
+        "fields": [
+          {
+            "objectTypeId": "0-1",
+            "name": "firstname",
+            "label": "First name",
+            "required": false,
+            "hidden": false,
+            "fieldType": "single_line_text"
+          }
+        ]
+      },
+      {
+        "groupType": "default_group",
+        "richTextType": "text",
+        "fields": [
+          {
+            "objectTypeId": "0-1",
+            "name": "lastname",
+            "label": "Last name",
+            "required": false,
+            "hidden": false,
+            "fieldType": "single_line_text"
+          }
+        ]
+      },
+      {
+        "groupType": "default_group",
+        "richTextType": "text",
+        "fields": [
+          {
+            "objectTypeId": "0-1",
+            "name": "add_to_mailing_list",
+            "label": "Add to mailing list",
+            "required": false,
+            "hidden": true,
+            "defaultValue": "true",
+            "fieldType": "single_checkbox"
+          }
+        ]
+      },
+      {
+        "groupType": "default_group",
+        "richTextType": "text",
+        "fields": [
+          {
+            "objectTypeId": "0-1",
+            "name": "interested_in",
+            "label": "Select which mailing lists you would like to join",
+            "required": false,
+            "hidden": true,
+            "defaultValues": ["DNG Motors"],
+            "options": [{ "label": "DNG Motors", "value": "DNG Motors", "description": "", "displayOrder": 0 }],
+            "fieldType": "multiple_checkboxes"
+          }
+        ]
+      }
+    ],
+    "configuration": {
+      "language": "en",
+      "cloneable": true,
+      "postSubmitAction": { "type": "thank_you", "value": "Thanks for submitting the form." },
+      "editable": true,
+      "archivable": true,
+      "recaptchaEnabled": false,
+      "notifyContactOwner": false,
+      "notifyRecipients": ["50354643"],
+      "createNewContactForNewEmail": false,
+      "prePopulateKnownValues": true,
+      "allowLinkToResetKnownValues": false
+    },
+    "displayOptions": {
+      "renderRawHtml": false,
+      "theme": "default_style",
+      "submitButtonText": "Submit",
+      "style": {
+        "fontFamily": "helvetica",
+        "backgroundWidth": "100%",
+        "labelTextColor": "#33475b",
+        "labelTextSize": "14px",
+        "helpTextColor": "#7C98B6",
+        "helpTextSize": "11px",
+        "legalConsentTextColor": "#33475b",
+        "legalConsentTextSize": "14px",
+        "submitColor": "#770003",
+        "submitAlignment": "left",
+        "submitFontColor": "#ffffff",
+        "submitSize": "12px"
+      },
+      "cssClass": "hs-form stacked"
+    },
+    "legalConsentOptions": { "type": "none" },
+    "formType": "hubspot"
+  }
+}

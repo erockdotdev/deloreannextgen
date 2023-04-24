@@ -1,10 +1,13 @@
+{
+  /* mui font color https://stackoverflow.com/questions/50228108/change-textfield-font-color-in-mui */
+}
+
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
 
-import { Button } from '@libs/dng-ui/user-actions/Button'
+import { Button } from '@libs/ui/user-actions/Button'
+import { TextField, Card, Paper, Container, Stack, Grid } from '@mui/material'
 
-const inter = Inter({ subsets: ['latin'] })
+const background = 'assets/images/model-jzd.jpeg'
 
 export default function Home() {
   return (
@@ -15,9 +18,69 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <div>
-        {/* <h1>DeLorean Next Generation</h1>
-        <Button>CLICK ME</Button> */}
+      <div
+        style={{
+          minHeight: '100vh',
+          background: `url(${background}) no-repeat`,
+          backgroundSize: 'cover',
+          // filter: 'brightness(50%)',
+        }}
+      >
+        <Container maxWidth='lg'>
+          {/* mailing list form  */}
+          <section>
+            <Container
+              maxWidth='lg'
+              sx={{
+                padding: 15,
+                color: 'white',
+                backgroundColor: 'transparent',
+              }}
+            >
+              {/* left side text */}
+              <Grid container spacing={2}>
+                <Grid item sm={12} md={6} lg={6}>
+                  <h1 style={{ fontSize: '44px' }}>The Dream Never Died</h1>
+                  <p style={{ padding: '15px 0', lineHeight: '20px' }}>
+                    Keep up with the latest DNG news by signing up for the DeLorean Next Generation Newsletter.
+                  </p>
+                  <section id='social-icons'>
+                    <a href='https://www.instagram.com/deloreannextgenmotors' target='_blank'>
+                      instagram
+                    </a>{' '}
+                    |{' '}
+                    <a href='https://www.facebook.com/deloreannextgenerationmotors' target='_blank'>
+                      facebook
+                    </a>{' '}
+                    | <a href='mailto:info@deloreannextgen.com'>contact</a>
+                  </section>
+                </Grid>
+                {/* right side form */}
+
+                <Grid item sm={12} md={6} lg={6}>
+                  <form>
+                    <Stack sx={{ paddingLeft: 5 }}>
+                      <TextField
+                        id='mailing-list-name'
+                        label='First Name'
+                        variant='filled'
+                        sx={{ background: 'white', marginBottom: '10px' }}
+                      />
+                      <TextField
+                        id='mailing-list-email'
+                        label='Email Address'
+                        variant='filled'
+                        sx={{ background: 'white' }}
+                      />
+                      <Button>Subscribe</Button>
+                      <span>We respect your privacy. Unsubscribe at any time.</span>
+                    </Stack>
+                  </form>
+                </Grid>
+              </Grid>
+            </Container>
+          </section>
+        </Container>
       </div>
     </>
   )

@@ -1,4 +1,4 @@
-import HubSpot, { IHubSpotClient } from '@libs/dng-vendors/hubspot'
+import HubSpot, { IHubSpotClient } from '@libs/vendors/hubspot'
 // watch solid principal video again for dependency injection
 interface ICrmClient {
   getForm: () => void
