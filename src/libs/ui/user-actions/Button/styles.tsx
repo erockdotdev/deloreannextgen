@@ -6,4 +6,8 @@ export const Button = styled(MuiButton)`
   border-radius: 0;
   margin: 10px 0px;
   padding: 15px;
+  color: white;
+  &:before, :after: {
+    border-bottom: red,
+  },
 `

@@ -19,4 +19,4 @@ class CrmClient<T> {
   }
 }
 
-const crmClient = new CrmClient<IHubSpotClient>(HubSpot)
+const crmClient = new CrmClient(HubSpot)

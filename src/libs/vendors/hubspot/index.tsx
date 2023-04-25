@@ -20,17 +20,25 @@ const hubspotFormClient = new hubspot.Client({
 
 export interface IHubSpotClient {
   client: hubspot.Client
+  formClient: hubspot.Client
 }
 
-class HubSpotClient implements IHubSpotClient {
-  client
-  // @todo- make singleton
-  constructor({ client }: IHubSpotClient) {
-    this.client = client
+/**
+ * Server Client
+ * @todo: using hubspotFormClient directly for now should pass as props
+ */
+// class HubSpotClient implements IHubSpotClient {
+class HubSpotClient {
+  // client: hubspot.Client
+  // formClient: hubspot.Client
+  // constructor({ client, formClient }: IHubSpotClient) {
+  constructor() {
+    // this.client = client
+    // this.formClient = formClient
   }
   async getContacts() {
     try {
-      const response = await this.client.apiRequest({
+      const response = await hubspotClient.apiRequest({
         method: 'get',
         path: '/crm/v3/objects/contacts',
       })
@@ -43,7 +51,7 @@ class HubSpotClient implements IHubSpotClient {
   }
   async getForms() {
     try {
-      const response = await this.client.apiRequest({
+      const response = await hubspotClient.apiRequest({
         method: 'GET',
         path: '/marketing/v3/forms/',
       })
@@ -56,7 +64,7 @@ class HubSpotClient implements IHubSpotClient {
 
   async getForm(formId: string) {
     try {
-      const response = await this.client.apiRequest({
+      const response = await hubspotClient.apiRequest({
         method: 'GET',
         path: `/marketing/v3/forms/${formId}`,
       })
@@ -66,43 +74,23 @@ class HubSpotClient implements IHubSpotClient {
       console.error('error', e)
     }
   }
-  async submitForm(formId = '7163a57c-db99-441b-bccb-566b85c110c6', formData?: any) {
-    var data = {
-      submittedAt: new Date(),
-      fields: [
-        {
-          objectTypeId: '0-1',
-          name: 'email',
-          value: 'eric.test7@dngmotors.com',
-        },
-        {
-          objectTypeId: '0-1',
-          name: 'firstname',
-          value: 'eric23',
-        },
-        {
-          objectTypeId: '0-1',
-          name: 'interested_in',
-          value: 'DNG Motors',
-          // defaultValues: ['DNG Motors'],
-        },
-      ],
-    }
+
+  async submitForm(formId: string, formData: any) {
     try {
       const response = await hubspotFormClient.apiRequest({
         method: 'POST',
-        // var url = 'https://api.hsforms.com/submissions/v3/integration/secure/submit/62515/fcc69886-915b-4fef-b35f-27850ef461e1?hapikey=demo'
         path: `/submissions/v3/integration/secure/submit/${process.env.HUBSPOT_PORTAL_ID}/${formId}`,
-        body: data,
+        body: formData,
       })
-      const json = await response.json()
-      return json
-    } catch (e) {
-      console.error('error', e)
+      return await response.json()
+    } catch (err) {
+      // @todo: connect to error logger
+      console.error('HubSpotClient Error:', err)
+      return err
     }
   }
 }
 
-const HubSpot = new HubSpotClient({ client: hubspotClient })
+const HubSpot = new HubSpotClient()
 
 export default HubSpot
