@@ -15,9 +15,8 @@ import { HubSpotForm, transformFormDataToHubSpotFormat } from '@libs/services/cl
 import { useEffect, useState } from 'react'
 import styled from '@emotion/styled'
 
-import { RiFacebookLine, RiInstagramLine, RiMailLine } from 'react-icons/ri'
-import { IoIosMail } from 'react-icons/Io'
-// import { FaFacebookSquare } from 'react-icons/fa'
+import { RiFacebookLine, RiInstagramLine } from 'react-icons/ri'
+import { IoIosMail } from 'react-icons/io'
 import { IconContext } from 'react-icons'
 
 // break out to libs
