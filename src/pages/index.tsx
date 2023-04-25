@@ -6,7 +6,7 @@
 import Head from 'next/head'
 
 import { Button } from '@libs/ui/user-actions/Button'
-import { TextField, Container, Stack, Grid } from '@mui/material'
+import { TextField, Container, Stack, Grid, Box } from '@mui/material'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as Yup from 'yup'
@@ -18,6 +18,75 @@ import styled from '@emotion/styled'
 import { RiFacebookLine, RiInstagramLine } from 'react-icons/ri'
 import { IoIosMail } from 'react-icons/io'
 import { IconContext } from 'react-icons'
+
+const StyledLink = styled('a')`
+  border-radius: 5%;
+  color: white;
+  &:hover {
+    color: white;
+    filter: brightness(2);
+  }
+`
+
+const SocialLinks = () => (
+  <section id='social-icons' style={{ display: 'flex', justifyContent: 'center' }}>
+    <StyledLink href='https://www.instagram.com/deloreannextgenmotors' target='_blank'>
+      <div
+        style={{
+          marginRight: '15px',
+          background: 'black',
+          width: '50px',
+          height: '50px',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          borderRadius: '10px',
+        }}
+      >
+        <IconContext.Provider value={{ size: '2.5em' }}>
+          <RiInstagramLine />
+        </IconContext.Provider>
+      </div>
+    </StyledLink>
+    <StyledLink href='https://www.facebook.com/deloreannextgenerationmotors' target='_blank'>
+      <div
+        style={{
+          marginRight: '15px',
+          background: 'black',
+          width: '50px',
+          height: '50px',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          borderRadius: '10px',
+        }}
+      >
+        <IconContext.Provider value={{ size: '2.5em' }}>
+          <RiFacebookLine />
+        </IconContext.Provider>
+      </div>
+    </StyledLink>
+
+    <StyledLink href='mailto:media@dngmotors.com'>
+      <div
+        style={{
+          marginRight: '15px',
+          background: 'black',
+          width: '50px',
+          height: '50px',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          borderRadius: '10px',
+        }}
+      >
+        <IconContext.Provider value={{ size: '2em' }}>
+          <IoIosMail />
+        </IconContext.Provider>
+      </div>
+    </StyledLink>
+  </section>
+)
 
 // break out to libs
 const background = 'assets/images/model-jzd.jpeg'
@@ -73,15 +142,6 @@ export default function Home() {
   }
 
   const date = new Date()
-
-  const StyledLink = styled('a')`
-    border-radius: 5%;
-    color: white;
-    &:hover {
-      color: white;
-      filter: brightness(2);
-    }
-  `
 
   return (
     <>
@@ -141,7 +201,9 @@ export default function Home() {
                           fontWeight: 'light',
                           backgroundColor: 'black',
                           display: 'inline-block',
-                          padding: '0 5px',
+                          padding: '3px 5px',
+                          fontSize: '1em',
+                          marginBottom: '15px',
                         }}
                       >
                         DELOREAN NEXT GENERATION
@@ -149,12 +211,13 @@ export default function Home() {
                       <p
                         style={{
                           position: 'relative',
-                          // left: '-2px',
+
                           fontSize: '44px',
                           textAlign: 'left',
                           fontFamily: 'IBMPlexSans',
                           fontWeight: 700,
                           letterSpacing: '1px',
+                          lineHeight: '44px',
                         }}
                       >
                         Dream DeLorean.
@@ -162,64 +225,9 @@ export default function Home() {
                       <p style={{ padding: '15px 0', lineHeight: '20px' }}>
                         Keep up with the latest by signing up for the DeLorean Next Generation Newsletter.
                       </p>
-
-                      <section id='social-icons' style={{ display: 'flex' }}>
-                        <StyledLink href='https://www.instagram.com/deloreannextgenmotors' target='_blank'>
-                          <div
-                            style={{
-                              marginRight: '15px',
-                              background: 'black',
-                              width: '50px',
-                              height: '50px',
-                              display: 'flex',
-                              justifyContent: 'center',
-                              alignItems: 'center',
-                              borderRadius: '10px',
-                            }}
-                          >
-                            <IconContext.Provider value={{ size: '2.5em' }}>
-                              <RiInstagramLine />
-                            </IconContext.Provider>
-                          </div>
-                        </StyledLink>
-                        <StyledLink href='https://www.facebook.com/deloreannextgenerationmotors' target='_blank'>
-                          <div
-                            style={{
-                              marginRight: '15px',
-                              background: 'black',
-                              width: '50px',
-                              height: '50px',
-                              display: 'flex',
-                              justifyContent: 'center',
-                              alignItems: 'center',
-                              borderRadius: '10px',
-                            }}
-                          >
-                            <IconContext.Provider value={{ size: '2.5em' }}>
-                              <RiFacebookLine />
-                            </IconContext.Provider>
-                          </div>
-                        </StyledLink>
-
-                        <StyledLink href='mailto:media@dngmotors.com'>
-                          <div
-                            style={{
-                              marginRight: '15px',
-                              background: 'black',
-                              width: '50px',
-                              height: '50px',
-                              display: 'flex',
-                              justifyContent: 'center',
-                              alignItems: 'center',
-                              borderRadius: '10px',
-                            }}
-                          >
-                            <IconContext.Provider value={{ size: '2em' }}>
-                              <IoIosMail />
-                            </IconContext.Provider>
-                          </div>
-                        </StyledLink>
-                      </section>
+                      <Box sx={{ display: { md: 'inline-block', sm: 'none', xs: 'none' } }}>
+                        <SocialLinks />
+                      </Box>
                     </div>
                   </Grid>
                   {/* right side form */}
@@ -263,11 +271,14 @@ export default function Home() {
                             {formError && (
                               <span>Sorry, we're unable to add you to our mailing list, please try again</span>
                             )}
-                            <span style={{ textAlign: 'center' }}>
+                            <span style={{ textAlign: 'center', marginBottom: '15px' }}>
                               We respect your privacy. Unsubscribe at any time.
                             </span>
                           </Stack>
                         </form>
+                        <Box sx={{ display: { xl: 'none', lg: 'none', md: 'none', sm: 'inline-block' } }}>
+                          <SocialLinks />
+                        </Box>
                       </section>
                     )}
                     {/* 
