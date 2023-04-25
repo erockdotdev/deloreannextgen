@@ -67,6 +67,8 @@ export default function Home() {
     setFormResponse(response)
   }
 
+  const date = new Date()
+
   return (
     <>
       <Head>
@@ -77,14 +79,26 @@ export default function Home() {
       </Head>
       <div
         style={{
-          minHeight: '100vh',
-          background: `url(${background}) no-repeat`,
+          minHeight: '88vh',
+          background: `url(${background}) no-repeat center`,
           backgroundSize: 'cover',
+          position: 'relative',
         }}
       >
+        <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0,
+            backgroundColor: 'rgba(0,0,0,.3)',
+            zIndex: '0',
+          }}
+        />
         <Container maxWidth='lg'>
-          {/* mailing list form  */}
-          <section>
+          <section style={{ position: 'relative', zIndex: '1' }}>
+            {/* mailing list form  */}
             <Container
               maxWidth='lg'
               sx={{
@@ -97,9 +111,9 @@ export default function Home() {
               <Grid container spacing={2}>
                 <Grid item sm={12} md={6} lg={6}>
                   <div style={{ padding: '10px 15px' }}>
-                    <h1 style={{ fontSize: '44px' }}>The Dream Never Died</h1>
+                    <h1 style={{ fontSize: '44px' }}>Dream DeLorean.</h1>
                     <p style={{ padding: '15px 0', lineHeight: '20px' }}>
-                      Keep up with the latest DNG news by signing up for the DeLorean Next Generation Newsletter.
+                      Keep up with the latest by signing up for the DeLorean Next Generation Newsletter.
                     </p>
 
                     <section id='social-icons'>
@@ -110,7 +124,7 @@ export default function Home() {
                       <a href='https://www.facebook.com/deloreannextgenerationmotors' target='_blank'>
                         facebook
                       </a>{' '}
-                      | <a href='mailto:info@deloreannextgen.com'>contact</a>
+                      | <a href='mailto:media@dngmotors.com'>contact</a>
                     </section>
                   </div>
                 </Grid>
@@ -143,7 +157,15 @@ export default function Home() {
                             {...register('email', { required: true })}
                           />
                           {errors.email && <div className='form-error'>{errors.email?.message}</div>}
-                          <Button type='submit'>Subscribe</Button>
+                          <Button
+                            sx={{
+                              '&.MuiButton-root': { bgcolor: '#8B0000' },
+                              '&.MuiButton-root:hover': { bgcolor: '#ff0000' },
+                            }}
+                            type='submit'
+                          >
+                            Subscribe
+                          </Button>
                           {formError && (
                             <span>Sorry, we're unable to add you to our mailing list, please try again</span>
                           )}
@@ -167,6 +189,19 @@ export default function Home() {
           </section>
         </Container>
       </div>
+      <footer>
+        <Container
+          maxWidth='lg'
+          sx={{
+            padding: '20px 0 ',
+            textAlign: 'center',
+            lineHeight: '22px',
+          }}
+        >
+          <p> Proudly built in the Motor City</p>
+          <p style={{ fontSize: '15px' }}>©{date.getFullYear()} DeLorean Next Generation: A DeLorean Family Company</p>
+        </Container>
+      </footer>
     </>
   )
 }
