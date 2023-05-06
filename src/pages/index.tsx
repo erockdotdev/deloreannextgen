@@ -5,7 +5,7 @@
 
 import Head from 'next/head'
 
-import { Button } from '@libs/ui/user-actions/Button'
+import { Button } from '@libs/components/user-actions/Button'
 import { TextField, Container, Stack, Grid, Box } from '@mui/material'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
@@ -13,80 +13,10 @@ import * as Yup from 'yup'
 import clientAPI, { FormIds } from '@libs/services/client-api'
 import { HubSpotForm, transformFormDataToHubSpotFormat } from '@libs/services/client-api/libs/utils/formatMailingList'
 import { useEffect, useState } from 'react'
+
+import Footer from '@libs/components/modules/Footer'
+import SocialLinks from '@libs/components/modules/SocialLinks'
 import styled from '@emotion/styled'
-
-import { RiFacebookLine, RiInstagramLine } from 'react-icons/ri'
-import { IoIosMail } from 'react-icons/io'
-import { IconContext } from 'react-icons'
-
-const StyledLink = styled('a')`
-  border-radius: 5%;
-  color: white;
-  &:hover {
-    color: white;
-    filter: brightness(2);
-  }
-`
-
-const SocialLinks = () => (
-  <section id='social-icons' style={{ display: 'flex', justifyContent: 'center' }}>
-    <StyledLink href='https://www.instagram.com/deloreannextgenmotors' target='_blank'>
-      <div
-        style={{
-          marginRight: '15px',
-          background: 'black',
-          width: '50px',
-          height: '50px',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          borderRadius: '10px',
-        }}
-      >
-        <IconContext.Provider value={{ size: '2.5em' }}>
-          <RiInstagramLine />
-        </IconContext.Provider>
-      </div>
-    </StyledLink>
-    <StyledLink href='https://www.facebook.com/deloreannextgenerationmotors' target='_blank'>
-      <div
-        style={{
-          marginRight: '15px',
-          background: 'black',
-          width: '50px',
-          height: '50px',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          borderRadius: '10px',
-        }}
-      >
-        <IconContext.Provider value={{ size: '2.5em' }}>
-          <RiFacebookLine />
-        </IconContext.Provider>
-      </div>
-    </StyledLink>
-
-    <StyledLink href='mailto:media@dngmotors.com'>
-      <div
-        style={{
-          marginRight: '15px',
-          background: 'black',
-          width: '50px',
-          height: '50px',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          borderRadius: '10px',
-        }}
-      >
-        <IconContext.Provider value={{ size: '2em' }}>
-          <IoIosMail />
-        </IconContext.Provider>
-      </div>
-    </StyledLink>
-  </section>
-)
 
 // break out to libs
 const background = 'assets/images/model-jzd.jpeg'
@@ -141,7 +71,35 @@ export default function Home() {
     setFormResponse(response)
   }
 
-  const date = new Date()
+  const SpinnerStyles = styled('div')`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .loader {
+      width: 30px;
+      height: 30px;
+      border: 3px solid #fff;
+      border-bottom-color: transparent;
+      border-radius: 50%;
+      display: inline-block;
+      box-sizing: border-box;
+      animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  `
+  const Spinner = () => (
+    <SpinnerStyles>
+      <span className='loader'></span>
+    </SpinnerStyles>
+  )
 
   return (
     <>
@@ -195,29 +153,29 @@ export default function Home() {
                 <Grid container spacing={2}>
                   <Grid item sm={12} md={6} lg={6}>
                     <div style={{ padding: '10px 15px' }}>
-                      <p
+                      <span
                         style={{
                           fontFamily: 'Saira',
                           fontWeight: 'light',
                           backgroundColor: 'black',
-                          display: 'inline-block',
-                          padding: '3px 5px',
+                          padding: '0 5px',
                           fontSize: '1em',
                           marginBottom: '15px',
+                          WebkitBoxDecorationBreak: 'clone',
                         }}
                       >
                         DELOREAN NEXT GENERATION
-                      </p>
+                      </span>
                       <p
                         style={{
                           position: 'relative',
-
                           fontSize: '44px',
                           textAlign: 'left',
                           fontFamily: 'IBMPlexSans',
                           fontWeight: 700,
                           letterSpacing: '1px',
                           lineHeight: '44px',
+                          marginTop: '10px',
                         }}
                       >
                         Dream DeLorean.
@@ -225,16 +183,15 @@ export default function Home() {
                       <p style={{ padding: '15px 0', lineHeight: '20px' }}>
                         Keep up with the latest by signing up for the DeLorean Next Generation Newsletter.
                       </p>
-                      <Box sx={{ display: { md: 'inline-block', sm: 'none', xs: 'none' } }}>
+                      <Box sx={{ display: { md: 'block', sm: 'none', xs: 'none' } }}>
                         <SocialLinks />
                       </Box>
                     </div>
                   </Grid>
                   {/* right side form */}
-
                   <Grid item sm={12} md={6} lg={6}>
                     {!formSuccess && (
-                      <section style={{ padding: '10px 15px' }}>
+                      <section style={{ padding: '10px' }}>
                         <form onSubmit={handleSubmit(onSubmit)}>
                           <Stack>
                             <TextField
@@ -266,7 +223,7 @@ export default function Home() {
                               }}
                               type='submit'
                             >
-                              Subscribe
+                              {!isLoading ? 'Subscribe' : <Spinner />}
                             </Button>
                             {formError && (
                               <span>Sorry, we're unable to add you to our mailing list, please try again</span>
@@ -276,42 +233,43 @@ export default function Home() {
                             </span>
                           </Stack>
                         </form>
-                        <Box sx={{ display: { xl: 'none', lg: 'none', md: 'none', sm: 'inline-block' } }}>
+                        <Box sx={{ display: { xl: 'none', lg: 'none', md: 'none', sm: 'block' } }}>
                           <SocialLinks />
                         </Box>
                       </section>
                     )}
-                    {/* 
-                  - would be nice to show instagram with link to follow account after submitting 
-                  - it would also be good to control the submit view with a cookie and a query param
-                          - if they have the cookie then redirect to submit success view
-                          - should have an option to submit another email
-                  - we should also check if they are already on the list
-                  - we need a dedicated update/unsubscribe page that shows a user all the mailing lists they are on
-                  */}
-                    {formSuccess && <span style={{ textAlign: 'center' }}>Thanks for joining our mailing list!</span>}
+                    {formSuccess && (
+                      <section
+                        style={{
+                          padding: '10px 15px',
+                          display: 'flex',
+                          justifyContent: 'center',
+                          alignItems: 'center',
+                          height: '100%',
+                        }}
+                      >
+                        <h2 style={{ textAlign: 'center' }}>Thanks for joining our mailing list!</h2>
+                      </section>
+                    )}
                   </Grid>
                 </Grid>
               </Container>
             </section>
           </Container>
         </main>
-        <footer
-          style={{
-            position: 'absolute',
-            bottom: 0,
-            width: '100%',
-            padding: '15px 0',
-            textAlign: 'center',
-            lineHeight: '22px',
-            zIndex: 1,
-            backgroundColor: 'rgba(0, 0, 0, 0.5)',
-          }}
-        >
-          <p> Proudly built in the Motor City</p>
-          <p style={{ fontSize: '15px' }}>©{date.getFullYear()} DeLorean Next Generation: A DeLorean Family Company</p>
-        </footer>
+        <Footer />
       </div>
     </>
   )
+}
+
+{
+  /* 
+                  - would be nice to show instagram with link to follow account after submitting 
+                  - it would also be good to control the submit view with a cookie and a query param
+                          - if they have the cookie then redirect to submit success view
+                          - should have an option to submit another email
+                  - we should also check if they are already on the list
+                  - we need a dedicated update/unsubscribe page that shows a user all the mailing lists they are on
+                  */
 }
