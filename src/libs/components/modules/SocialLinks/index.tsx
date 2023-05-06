@@ -8,9 +8,15 @@ import EmailIcon from '@mui/icons-material/Email'
 const StyledLink = styled('a')`
   border-radius: 5%;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover {
     color: white;
     filter: brightness(2);
+  }
+  &:not(:last-child) {
+    margin-right: 15px;
   }
 `
 
@@ -33,20 +39,7 @@ const socialIcons = {
 const renderSocialLinks = (links: SocialLink[]) => {
   return links.map((link) => (
     <StyledLink key={link.id} {...link}>
-      <div
-        style={{
-          marginRight: '15px',
-          // background: 'black',
-          // width: '50px',
-          // height: '50px',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          // borderRadius: '10px',
-        }}
-      >
-        {socialIcons[link.id] || link.id}
-      </div>
+      {socialIcons[link.id] || link.id}
     </StyledLink>
   ))
 }
@@ -57,7 +50,7 @@ const SocialLinks = () => {
       id='social-icons'
       style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
     >
-      <header style={{ paddingBottom: '15px', marginBottom: '15px', borderBottom: 'solid white 1px' }}>
+      <header style={{ paddingBottom: '15px', marginBottom: '10px', borderBottom: 'solid white 1px' }}>
         Stay Connected
       </header>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>{renderSocialLinks(links)}</div>
