@@ -1,6 +1,10 @@
 import React from 'react'
 
-function Footer() {
+interface SiteFooter {
+  companyName: string
+}
+
+function Footer({ companyName = 'DeLorean Next Generation' }: SiteFooter) {
   const date = new Date()
   return (
     <footer
@@ -15,7 +19,9 @@ function Footer() {
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
       }}
     >
-      <p style={{ fontSize: '15px' }}>©{date.getFullYear()} DeLorean Next Generation: A DeLorean Family Company</p>
+      <p style={{ fontSize: '15px' }}>
+        ©{date.getFullYear()} {companyName}: A DeLorean Family Company
+      </p>
     </footer>
   )
 }

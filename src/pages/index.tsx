@@ -40,6 +40,7 @@ export default function Home() {
     register,
     handleSubmit,
     formState: { errors },
+    setFocus,
   } = useForm<FormValues>(formOptions)
 
   const [isLoading, setIsLoading] = useState(false)
@@ -70,6 +71,10 @@ export default function Home() {
     )
     setFormResponse(response)
   }
+
+  useEffect(() => {
+    setFocus('firstName')
+  }, [setFocus])
 
   const SpinnerStyles = styled('div')`
     display: flex;
@@ -196,6 +201,7 @@ export default function Home() {
                           <Stack>
                             <TextField
                               id='mailing-list-name'
+                              autoFocus
                               label='First Name'
                               variant='filled'
                               sx={{ background: 'white', marginBottom: '10px' }}

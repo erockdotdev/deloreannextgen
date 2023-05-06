@@ -1,8 +1,9 @@
 import React from 'react'
+
 import styled from '@emotion/styled'
-import { RiFacebookLine, RiInstagramLine } from 'react-icons/ri'
-import { IoIosMail } from 'react-icons/io'
-import { IconContext } from 'react-icons'
+import FacebookIcon from '@mui/icons-material/Facebook'
+import InstagramIcon from '@mui/icons-material/Instagram'
+import EmailIcon from '@mui/icons-material/Email'
 
 const StyledLink = styled('a')`
   border-radius: 5%;
@@ -24,21 +25,9 @@ const links: SocialLink[] = [
 ]
 
 const socialIcons = {
-  instagram: (
-    <IconContext.Provider value={{ size: '2.5em' }}>
-      <RiInstagramLine />
-    </IconContext.Provider>
-  ),
-  facebook: (
-    <IconContext.Provider value={{ size: '2.5em' }}>
-      <RiFacebookLine />
-    </IconContext.Provider>
-  ),
-  email: (
-    <IconContext.Provider value={{ size: '2em' }}>
-      <IoIosMail />
-    </IconContext.Provider>
-  ),
+  instagram: <InstagramIcon style={{ height: '35px', width: '35px' }} />,
+  facebook: <FacebookIcon style={{ height: '35px', width: '35px' }} />,
+  email: <EmailIcon style={{ height: '35px', width: '35px' }} />,
 }
 
 const renderSocialLinks = (links: SocialLink[]) => {
@@ -47,13 +36,13 @@ const renderSocialLinks = (links: SocialLink[]) => {
       <div
         style={{
           marginRight: '15px',
-          background: 'black',
-          width: '50px',
-          height: '50px',
+          // background: 'black',
+          // width: '50px',
+          // height: '50px',
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          borderRadius: '10px',
+          // borderRadius: '10px',
         }}
       >
         {socialIcons[link.id] || link.id}
