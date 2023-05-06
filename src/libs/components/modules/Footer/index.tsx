@@ -1,7 +1,7 @@
 import React from 'react'
 
 interface SiteFooter {
-  companyName: string
+  companyName?: string
 }
 
 function Footer({ companyName = 'DeLorean Next Generation' }: SiteFooter) {

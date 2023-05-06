@@ -185,7 +185,7 @@ export default function Home() {
                       >
                         Dream DeLorean.
                       </p>
-                      <p style={{ padding: '15px 0', lineHeight: '20px' }}>
+                      <p style={{ padding: '15px 0 0', lineHeight: '20px' }}>
                         Keep up with the latest by signing up for the DeLorean Next Generation Newsletter.
                       </p>
                       <Box sx={{ display: { md: 'block', sm: 'none', xs: 'none' } }}>
@@ -194,7 +194,7 @@ export default function Home() {
                     </div>
                   </Grid>
                   {/* right side form */}
-                  <Grid item sm={12} md={6} lg={6}>
+                  <Grid item sm={12} md={6} lg={6} sx={{ flexBasis: '100%' }}>
                     {!formSuccess && (
                       <section style={{ padding: '10px' }}>
                         <form onSubmit={handleSubmit(onSubmit)}>

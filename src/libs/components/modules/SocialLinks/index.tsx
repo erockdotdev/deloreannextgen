@@ -30,6 +30,8 @@ const links: SocialLink[] = [
   { id: 'email', href: 'mailto:media@dngmotors.com' },
 ]
 
+// alternative for handling mail to
+// https://adamsilver.io/blog/the-trouble-with-mailto-email-links-and-what-to-do-instead/
 const socialIcons = {
   instagram: <InstagramIcon style={{ height: '35px', width: '35px' }} />,
   facebook: <FacebookIcon style={{ height: '35px', width: '35px' }} />,
@@ -43,16 +45,21 @@ const renderSocialLinks = (links: SocialLink[]) => {
     </StyledLink>
   ))
 }
+interface SocialLinks {
+  header?: string | boolean
+}
 
-const SocialLinks = () => {
+const SocialLinks = ({ header = 'Stay Connected' }: SocialLinks) => {
   return (
     <section
       id='social-icons'
       style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
     >
-      <header style={{ paddingBottom: '15px', marginBottom: '10px', borderBottom: 'solid white 1px' }}>
-        Stay Connected
-      </header>
+      {header && (
+        <header style={{ paddingBottom: '10px', marginBottom: '15px', borderBottom: 'solid white 1px' }}>
+          {header}
+        </header>
+      )}
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>{renderSocialLinks(links)}</div>
     </section>
   )
