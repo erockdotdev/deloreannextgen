@@ -88,6 +88,14 @@ function Footer({ companyName = 'DeLorean Next Generation' }: SiteFooter) {
           <p>
             <Link href='#'>Shop DNG</Link>
           </p>
+          <br />
+          <p style={{ marginBottom: '10px', fontWeight: '700' }}>SERVICES</p>
+          <p>
+            <Link href='https://motors.deloreannextgen.com'>Automotive Education</Link>
+          </p>
+          <p>
+            <Link href='https://style.deloreannextgen.com'>Consulting</Link>
+          </p>
         </div>
         {/* COL 3 */}
         <div>
@@ -97,23 +105,17 @@ function Footer({ companyName = 'DeLorean Next Generation' }: SiteFooter) {
               <Link href='#'>FAQs</Link>
             </p>
             <p>
-              <Link href='#'>Education</Link>
-            </p>
-            <p>
-              <Link href='#'>Consulting</Link>
+              <Link href='#'>Donate</Link>
             </p>
             <p>
               <Link href='#'>Investor Relations</Link>
             </p>
-            <p>
-              <Link href='#'>Donate</Link>
-            </p>
-            <p>
-              <Link href='#'>Forum</Link>
-            </p>
 
             <p>
               <Link href='#'>DeLorean Legacy Project</Link>
+            </p>
+            <p>
+              <Link href='#'>Forum</Link>
             </p>
           </div>
         </div>
