@@ -15,9 +15,8 @@ export function middleware(req: NextRequest, res: NextResponse) {
   const hostname = req.headers.get('host')
   const subdomain = (hostname as string).split('.')[0]
 
-  console.log('subdomain', subdomain)
-
   if (!sites[subdomain]) {
+    console.error(`Error: Subdomain: "${subdomain}" is not configured`)
     return NextResponse.next()
   }
   if (pathname.startsWith(`/_sites`)) {
@@ -30,6 +29,7 @@ export function middleware(req: NextRequest, res: NextResponse) {
     !pathname.includes('.') && //
     !pathname.startsWith('/api')
   ) {
+    // link replace
     // rewrite to the current hostname under the pages/sites folder
     // the main logic component will happen in pages/sites/[site]/index.tsx
     const url = req.nextUrl.clone()

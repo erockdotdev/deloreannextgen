@@ -185,7 +185,7 @@ export default function Home() {
                       >
                         Dream DeLorean.
                       </p>
-                      <p style={{ padding: '15px 0 0', lineHeight: '20px' }}>
+                      <p style={{ padding: '15px 0', lineHeight: '20px' }}>
                         Keep up with the latest by signing up for the DeLorean Next Generation Newsletter.
                       </p>
                       <Box sx={{ display: { md: 'block', sm: 'none', xs: 'none' } }}>
@@ -263,8 +263,8 @@ export default function Home() {
             </section>
           </Container>
         </main>
-        <Footer />
       </div>
+      <Footer />
     </>
   )
 }

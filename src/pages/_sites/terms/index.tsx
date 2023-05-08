@@ -1,8 +1,8 @@
 // have link to header sections
 import React from 'react'
 
-function TermsPage() {
-  return <div>TermsPage</div>
+function TermsSite() {
+  return <div>TermsSite</div>
 }
 
-export default TermsPage
+export default TermsSite

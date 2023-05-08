@@ -5,9 +5,9 @@ import Footer from '@libs/components/modules/Footer'
 import { TextField, Container, Stack, Grid, Box } from '@mui/material'
 import SocialLinks from '@libs/components/modules/SocialLinks'
 
-const background = 'assets/images/road-stock-image.jpeg'
+const background = 'assets/images/back-to-the-future-fashon.jpeg'
 
-function MotorsSite() {
+function StyleSite() {
   return (
     <div>
       <div className='page' style={{ position: 'relative' }}>
@@ -67,7 +67,7 @@ function MotorsSite() {
                   WebkitBoxDecorationBreak: 'clone',
                 }}
               >
-                DNG Motors
+                DeLorean Style
               </span>
               <p
                 style={{
@@ -98,4 +98,4 @@ function MotorsSite() {
   )
 }
 
-export default MotorsSite
+export default StyleSite

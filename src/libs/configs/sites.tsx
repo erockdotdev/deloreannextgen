@@ -6,6 +6,12 @@ export type SiteConfig = {
   }
 }
 export const sites: SiteConfig = {
+  contact: {
+    public: true,
+  },
+  terms: {
+    public: true,
+  },
   motors: {
     public: true,
   },

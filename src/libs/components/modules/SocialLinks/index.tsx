@@ -4,6 +4,7 @@ import styled from '@emotion/styled'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import EmailIcon from '@mui/icons-material/Email'
+import YoutubeIcon from '@mui/icons-material/YouTube'
 
 const StyledLink = styled('a')`
   border-radius: 5%;
@@ -11,8 +12,7 @@ const StyledLink = styled('a')`
   display: flex;
   justify-content: center;
   align-items: center;
-  &:hover {
-    color: white;
+  & svg:hover {
     filter: brightness(2);
   }
   &:not(:last-child) {
@@ -25,9 +25,9 @@ type SocialLink = {
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>
 
 const links: SocialLink[] = [
-  { id: 'facebook', href: 'https://www.facebook.com/deloreannextgenerationmotors', target: '_blank' },
   { id: 'instagram', href: 'https://www.instagram.com/deloreannextgenmotors', target: '_blank' },
-  { id: 'email', href: 'mailto:media@dngmotors.com' },
+  { id: 'facebook', href: 'https://www.facebook.com/deloreannextgenerationmotors', target: '_blank' },
+  { id: 'youtube', href: 'https://www.youtube.com/@dngmotors6571', target: '_blank' },
 ]
 
 // alternative for handling mail to
@@ -35,6 +35,7 @@ const links: SocialLink[] = [
 const socialIcons = {
   instagram: <InstagramIcon style={{ height: '35px', width: '35px' }} />,
   facebook: <FacebookIcon style={{ height: '35px', width: '35px' }} />,
+  youtube: <YoutubeIcon style={{ height: '35px', width: '35px' }} />,
   email: <EmailIcon style={{ height: '35px', width: '35px' }} />,
 }
 
@@ -53,14 +54,26 @@ const SocialLinks = ({ header = 'Stay Connected' }: SocialLinks) => {
   return (
     <section
       id='social-icons'
-      style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
+      style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'flex-start', flexDirection: 'column' }}
     >
       {header && (
-        <header style={{ paddingBottom: '10px', marginBottom: '15px', borderBottom: 'solid white 1px' }}>
+        <header
+          style={{ paddingBottom: '10px', marginBottom: '15px', borderBottom: 'solid white 1px', fontWeight: 700 }}
+        >
           {header}
         </header>
       )}
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>{renderSocialLinks(links)}</div>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'flex-start',
+          alignItems: 'flex-start',
+          position: 'relative',
+          left: '-3px',
+        }}
+      >
+        {renderSocialLinks(links)}
+      </div>
     </section>
   )
 }
