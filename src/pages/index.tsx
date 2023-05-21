@@ -17,6 +17,7 @@ import { useEffect, useState } from 'react'
 import Footer from '@libs/components/modules/Footer'
 import SocialLinks from '@libs/components/modules/SocialLinks'
 import styled from '@emotion/styled'
+import Link from 'next/link'
 
 // break out to libs
 const background = 'assets/images/model-jzd.jpeg'
@@ -199,29 +200,38 @@ export default function Home() {
                       <section style={{ padding: '10px' }}>
                         <form onSubmit={handleSubmit(onSubmit)}>
                           <Stack>
-                            <TextField
-                              id='mailing-list-name'
-                              autoFocus
-                              label='First Name'
-                              variant='filled'
-                              sx={{ background: 'white', marginBottom: '10px' }}
-                              InputLabelProps={{
-                                style: { color: 'black' },
-                              }}
-                              {...register('firstName', { required: true })}
-                            />
-                            {errors.firstName && <div className='form-error'>{errors.firstName?.message}</div>}
-                            <TextField
-                              id='mailing-list-email'
-                              label='Email Address'
-                              variant='filled'
-                              sx={{ background: 'white', marginBottom: '10px' }}
-                              InputLabelProps={{
-                                style: { color: 'black' },
-                              }}
-                              {...register('email', { required: true })}
-                            />
-                            {errors.email && <div className='form-error'>{errors.email?.message}</div>}
+                            <div className='field-container' style={{ marginBottom: '10px' }}>
+                              <TextField
+                                id='mailing-list-name'
+                                autoFocus
+                                label='First Name'
+                                variant='filled'
+                                sx={{ background: 'white', width: '100%' }}
+                                InputLabelProps={{
+                                  style: { color: 'black' },
+                                }}
+                                {...register('firstName', { required: true })}
+                              />
+                              <div style={{ minHeight: '24px', color: 'red' }} className='form-error'>
+                                {errors.firstName && errors.firstName?.message}
+                              </div>
+                            </div>
+                            <div className='field-container' style={{ marginBottom: '10px' }}>
+                              <TextField
+                                id='mailing-list-email'
+                                label='Email Address'
+                                variant='filled'
+                                sx={{ background: 'white', width: '100%' }}
+                                InputLabelProps={{
+                                  style: { color: 'black' },
+                                }}
+                                {...register('email', { required: true })}
+                              />
+
+                              <div style={{ minHeight: '24px', color: 'red' }} className='form-error'>
+                                {errors.email && errors.email?.message}
+                              </div>
+                            </div>
                             <Button
                               sx={{
                                 '&.MuiButton-root': { bgcolor: '#8B0000' },
@@ -235,11 +245,19 @@ export default function Home() {
                               <span>Sorry, we're unable to add you to our mailing list, please try again</span>
                             )}
                             <span style={{ textAlign: 'center', marginBottom: '15px' }}>
-                              We respect your privacy. Unsubscribe at any time.
+                              By joining our mailing list, you agree to our{' '}
+                              <Link href='/terms'>
+                                <u>Terms of Service</u>
+                              </Link>
+                              .
                             </span>
                           </Stack>
                         </form>
-                        <Box sx={{ display: { xl: 'none', lg: 'none', md: 'none', sm: 'block' } }}>
+                        <Box
+                          sx={{
+                            display: { xl: 'none', lg: 'none', md: 'none', sm: 'block' },
+                          }}
+                        >
                           <SocialLinks />
                         </Box>
                       </section>

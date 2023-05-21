@@ -54,15 +54,14 @@ const SocialLinks = ({ header = 'Stay Connected' }: SocialLinks) => {
   return (
     <section
       id='social-icons'
-      style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'flex-start', flexDirection: 'column' }}
+      // style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', flexDirection: 'column' }}
     >
       {header && (
         <header
           style={{ paddingBottom: '10px', marginBottom: '15px', borderBottom: 'solid white 1px', fontWeight: 700 }}
-        >
-          {header}
-        </header>
+        ></header>
       )}
+      <span style={{ display: 'inline-block', marginBottom: '10px', fontSize: '18px' }}>{header}</span>
       <div
         style={{
           display: 'flex',

@@ -15,7 +15,7 @@ function Footer({ companyName = 'DeLorean Next Generation' }: SiteFooter) {
     <footer
       style={{
         width: '100%',
-        paddingTop: '25px',
+        // paddingTop: '25px',
         textAlign: 'center',
         lineHeight: '22px',
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
@@ -24,8 +24,7 @@ function Footer({ companyName = 'DeLorean Next Generation' }: SiteFooter) {
       }}
     >
       {/* footer nav */}
-      <nav style={{ display: 'flex', justifyContent: 'space-around', margin: '15px 0' }}>
-        {/* COL 1 */}
+      {/* <nav style={{ display: 'flex', justifyContent: 'space-around', margin: '15px 0' }}>
         <div
           style={{
             display: 'flex',
@@ -34,8 +33,8 @@ function Footer({ companyName = 'DeLorean Next Generation' }: SiteFooter) {
             borderRight: 'solid white 1px;',
             paddingRight: '100px',
           }}
-        >
-          <a href='https://www.deloreannextgen.com'>
+        > */}
+      {/* <a href='https://www.deloreannextgen.com'>
             <p
               style={{
                 fontFamily: 'Saira',
@@ -49,8 +48,8 @@ function Footer({ companyName = 'DeLorean Next Generation' }: SiteFooter) {
             >
               DELOREAN NEXT GENERATION
             </p>
-          </a>
-          <div style={{ paddingBottom: '1rem' }}>
+          </a> */}
+      {/* <div style={{ paddingBottom: '1rem' }}>
             <SocialLinks header={false} />
           </div>
 
@@ -73,7 +72,6 @@ function Footer({ companyName = 'DeLorean Next Generation' }: SiteFooter) {
             <Link href='_sites/contact'>Contact Us</Link>
           </p>
         </div>
-        {/* COL 2 */}
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', paddingRight: '50px' }}>
           <p style={{ marginBottom: '10px', fontWeight: '700' }}>BRANDS</p>
           <p>
@@ -97,7 +95,6 @@ function Footer({ companyName = 'DeLorean Next Generation' }: SiteFooter) {
             <Link href='https://style.deloreannextgen.com'>Consulting</Link>
           </p>
         </div>
-        {/* COL 3 */}
         <div>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', marginBottom: '15px' }}>
             <p style={{ marginBottom: '10px', fontWeight: '700', paddingRight: '50px' }}>RESOURCES</p>
@@ -119,13 +116,28 @@ function Footer({ companyName = 'DeLorean Next Generation' }: SiteFooter) {
             </p>
           </div>
         </div>
-      </nav>
-      <div style={{ fontSize: '15px', padding: '25px', marginTop: '20px' }}>
-        <Link href='_sites/terms/tos'>Terms of Service</Link> |{' '}
-        <Link href='_sites/terms/privacy-policy'>Privacy Policy</Link> |{' '}
-        <Link href='_sites/terms/privacy-policy'>GDPR</Link> |{' '}
-        <Link href='_sites/terms/privacy-policy'>Cookie Policy</Link> | ©{date.getFullYear()} {companyName}: A DeLorean
-        Family Company
+      </nav> */}
+      {/* <div style={{ fontSize: '15px', padding: '25px', marginTop: '20px' }}> */}
+      <div style={{ fontSize: '15px', padding: '25px' }}>
+        <Link href={'/'}>
+          <p
+            style={{
+              fontFamily: 'Saira',
+              fontWeight: 'light',
+              backgroundColor: 'black',
+              fontSize: '1.4em',
+              marginBottom: '1rem',
+              position: 'relative',
+              left: '-1px',
+            }}
+          >
+            DELOREAN NEXT GENERATION
+          </p>
+        </Link>
+        {/* <Link href='_sites/terms/privacy-policy'>Cookie Policy</Link>|{' '} */}
+        {/* <Link href='_sites/terms/privacy-policy'>Privacy Policy</Link> |{' '}
+        <Link href='_sites/terms/privacy-policy'>GDPR</Link> |{' '}*/}
+        <Link href='terms'>Terms of Service</Link> | ©{date.getFullYear()} {companyName}: A DeLorean Family Company
       </div>
     </footer>
   )
