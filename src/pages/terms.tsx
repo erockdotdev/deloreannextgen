@@ -8,7 +8,7 @@ function Terms() {
   return (
     <>
       <Head>
-        <title>DNG |Terms of Service</title>
+        <title>DNG | Terms of Service</title>
       </Head>
       <Container maxWidth='md' sx={{ marginTop: '25px', marginBottom: '25px' }}>
         <h1>Terms of Service</h1>

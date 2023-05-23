@@ -21,6 +21,7 @@ function Footer({ companyName = 'DeLorean Next Generation' }: SiteFooter) {
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
         position: 'relative',
         zIndex: 1,
+        height: '10vh',
       }}
     >
       {/* footer nav */}
@@ -118,17 +119,16 @@ function Footer({ companyName = 'DeLorean Next Generation' }: SiteFooter) {
         </div>
       </nav> */}
       {/* <div style={{ fontSize: '15px', padding: '25px', marginTop: '20px' }}> */}
-      <div style={{ fontSize: '15px', padding: '25px' }}>
+      <div style={{ fontSize: '15px', padding: '10px 25px' }}>
         <Link href={'/'}>
           <p
             style={{
               fontFamily: 'Saira',
               fontWeight: 'light',
-              backgroundColor: 'black',
-              fontSize: '1.4em',
-              marginBottom: '1rem',
+              fontSize: '1.1em',
               position: 'relative',
               left: '-1px',
+              paddingBottom: '5px',
             }}
           >
             DELOREAN NEXT GENERATION
