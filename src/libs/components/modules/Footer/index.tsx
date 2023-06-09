@@ -134,10 +134,14 @@ function Footer({ companyName = 'DeLorean Next Generation' }: SiteFooter) {
             DELOREAN NEXT GENERATION
           </p>
         </Link>
+
         {/* <Link href='_sites/terms/privacy-policy'>Cookie Policy</Link>|{' '} */}
         {/* <Link href='_sites/terms/privacy-policy'>Privacy Policy</Link> |{' '}
         <Link href='_sites/terms/privacy-policy'>GDPR</Link> |{' '}*/}
-        <Link href='terms'>Terms of Service</Link> | ©{date.getFullYear()} {companyName}: A DeLorean Family Company
+        <span style={{ fontSize: '.9rem' }}>
+          <Link href='mailto:media@dngmotors.com'>Media Inquiries</Link> | <Link href='terms'>Terms of Service</Link> |
+          ©{date.getFullYear()} {companyName}: A DeLorean Family Company
+        </span>
       </div>
     </footer>
   )

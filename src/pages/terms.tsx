@@ -61,9 +61,8 @@ function Terms() {
           using the email you subscribed with.
         </p>
         <p>
-          Please note that our unsubscribe process is currently a manual process. Therefore, there may be a delay
-          between your unsubscribe request and receiving a confirmation. During this period, it is possible that you may
-          still receive scheduled emails.
+          Please note, there may be a delay between your unsubscribe request and receiving a confirmation. During this
+          period, it is possible that you may still receive scheduled emails.
         </p>
 
         <br />
