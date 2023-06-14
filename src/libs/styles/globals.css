@@ -120,6 +120,10 @@ a {
   text-decoration: none;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 a:hover {
   filter: brightness(85%);
 }

@@ -98,9 +98,22 @@ function Terms() {
           Any legal action or proceeding arising out of or related to these Terms of Service shall be brought
           exclusively in the courts of [appropriate jurisdiction].
         </p>
+        <br />
+        <h2 id='donations'>9. Donations</h2>
+        <p>
+          The DeLorean Legacy Project, also known as DLP, is an independent entity separate from DeLorean Next
+          Generation.
+        </p>
+        <p>
+          When making donations to the DeLorean Legacy Project, we currently accept payments exclusively through Zelle.
+          By choosing to donate, you are acknowledging and agreeing to abide by Zelle's terms and conditions. You can
+          review Zelle's terms and conditions by visiting the{' '}
+          <a href='https://www.zellepay.com/legal/user-service-agreement'>Zelle User Service Agreement</a>.
+        </p>
+        <p></p>
 
         <br />
-        <h2 id='contact-us'>9. Contact Us</h2>
+        <h2 id='contact-us'>10. Contact Us</h2>
         <p>
           If you have any questions or concerns regarding these Terms of Service, please contact us at{' '}
           <a href='mailto:support@dngmotors.com'>support@dngmotors.com</a>.

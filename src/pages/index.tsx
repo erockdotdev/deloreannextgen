@@ -107,8 +107,6 @@ export default function Home() {
     </SpinnerStyles>
   )
 
-  const headlines = ['where were you?', 'Dream DeLorean.', 'The Dream Never Died']
-
   return (
     <div style={{ minHeight: '100vh' }}>
       <Head>
@@ -186,7 +184,7 @@ export default function Home() {
                           left: '-2px',
                         }}
                       >
-                        Dream DeLorean.
+                        Dream DeLorean
                       </p>
                       <p style={{ padding: '15px 0', lineHeight: '20px' }}>
                         Keep up with the latest by signing up for the DeLorean Next Generation Newsletter.
